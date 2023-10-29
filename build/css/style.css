@@ -1242,12 +1242,26 @@ button,
   line-height: 0;
 }
 
-.intro__logo {
+.page-header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: -webkit-gradient(linear, left top, right top, from(#1C3477), color-stop(0.01%, #1C3477), color-stop(39.11%, #1A3578), color-stop(75.5%, #73184B), to(#B4022A));
+  background: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
+}
+
+.page-header__logo {
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 /* @mixin hover-focus {
