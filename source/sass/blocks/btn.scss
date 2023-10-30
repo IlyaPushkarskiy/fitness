@@ -14,6 +14,11 @@
     background-color: $color-torch-red;
   }
 
+  &--hero {
+    border: 2px solid #ffffff;
+    margin-left: auto;
+  }
+
   &:disabled {
     opacity: 0.5;
 

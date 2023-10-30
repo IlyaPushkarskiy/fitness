@@ -17,27 +17,53 @@
 <body>
   <div class="wrapper">
     <header class="page-header">
-      <nav class="container page-header__nav">
-        <a class="page-header__logo" href="index.html">
-          Supergym
-        </a>
-        <a class="page-header__logo page-header__phone" href="tel: +7 (800) 555-55-55">
-          8-800-555-55-55
-        </a>
-      </nav>
+      <div class="container">
+        <nav class="page-header__nav">
+          <a class="page-header__logo" href="index.html">
+            Supergym
+          </a>
+          <a class="page-header__logo page-header__phone" href="tel: +7 (800) 555-55-55">
+            8-800-555-55-55
+          </a>
+        </nav>
 
-      <div class="page-header__hero hero">
-        <h1 class="visually-hidden">SyperGym фитнес центр.</h1>
-        <p>Омск</p>
-        <p>Фитнес центр</p>
-        <p>Тренажерный зал Групповые занятия Кардио-зона</p>
-        <button>Купить абонемент</button>
-        <picture>
-          <!-- <source media="(min-width: 1440px)" srcset="images/logo-full.svg">
-          <source media="(min-width: 768px)" srcset="images/logo-short.svg"> -->
-          <img class="logo__link" width="500" height="524" src="img/header-desktop@1x.png"
-            srcset="img/header-desktop@2x.png" alt="Супер мужик">
-        </picture>
+        <div class="page-header__hero hero">
+          <div class="hero__box">
+            <h1 class="visually-hidden">
+              SyperGym фитнес центр.
+            </h1>
+            <p class="hero__promo">
+              Омск
+            </p>
+            <p class="hero__title">
+              Фитнес центр
+            </p>
+            <ul class="hero__list">
+              <li class="hero__item">
+                Тренажерный зал
+              </li>
+              <li class="hero__item">
+                Групповые занятия
+              </li>
+              <li class="hero__item">
+                Кардио-зона
+              </li>
+            </ul>
+            <button class="hero__button btn btn--hero">
+              Купить абонемент
+            </button>
+          </div>
+          <div class="hero__picture">
+            <picture>
+              <source media="(max-width: 1365px)" width="324" height="390" srcset="img/header-tablet@1x.png 1x"
+                srcset="img/header-tablet@2x.png 2x">
+              <source media="(min-width: 1366px)" width="500" height="524" srcset="img/header-desktop@1x.png 1x 1x"
+                srcset="img/header-desktop@2x.png 2x">
+              <img class="logo__link" width="500" height="524" src="img/header-desktop@1x.png 1x"
+                srcset="img/header-desktop@2x.png 2x" alt="Супер мужик">
+            </picture>
+          </div>
+        </div>
       </div>
     </header>
     <main>
