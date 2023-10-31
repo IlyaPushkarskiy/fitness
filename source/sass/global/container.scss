@@ -3,6 +3,7 @@
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 103px;
+  box-sizing: border-box;
 
   @include vp-1365 {
     padding: 0 45px;

@@ -55,10 +55,8 @@
           </div>
           <div class="hero__picture">
             <picture>
-              <source media="(max-width: 1365px)" width="324" height="390" srcset="img/header-tablet@1x.png 1x"
-                srcset="img/header-tablet@2x.png 2x">
-              <source media="(min-width: 1366px)" width="500" height="524" srcset="img/header-desktop@1x.png 1x 1x"
-                srcset="img/header-desktop@2x.png 2x">
+              <source type="image/png" media="(max-width: 1365px)" width="324" height="390"
+                srcset="img/header-tablet@1x.png 1x" srcset="img/header-tablet@2x.png 2x">
               <img class="logo__link" width="500" height="524" src="img/header-desktop@1x.png 1x"
                 srcset="img/header-desktop@2x.png 2x" alt="Супер мужик">
             </picture>
@@ -68,12 +66,48 @@
     </header>
     <main>
       <section class="intro">
-        <div class="container">
-          <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-          <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+        <div class="container intro__container">
+          <div class="intro__box">
+            <h2 class="intro__title">
+              Тренажерный зал
+            </h2>
+            <p class="intro__description">
+              Просторный зал площадью 900 кв/м
+            </p>
+            <p class="intro__content">
+              Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+              Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+            </p>
+            <p class="intro__content intro__content--additional">
+              В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+              несколько оборудованных залов для различных видов групповых занятий.
+            </p>
+          </div>
+          <div class="intro__picture">
+            <picture>
+              <source type="image/jpeg" media="(max-width: 767px)" width="320" height="313"
+              srcset="img/intro-mobile@1x.jpg 1x" srcset="img/header-mobile@2x.jpg 2x">
+              <source type="image/jpeg" media="(max-width: 1365px)" width="678" height="345"
+                srcset="img/intro-tablet@1x.jpg 1x" srcset="img/header-tablet@2x.jpg 2x">
+              <img class="logo__link" width="660" height="401" src="img/intro-desktop@1x.jpg 1x"
+                srcset="img/intro-desktop@2x.jpg 2x" alt="Фото тренажерного зала">
+            </picture>
+          </div>
+          <div class="intro__picture intro__picture--video">
+            <picture>
+              <source type="image/jpeg" media="(max-width: 767px)" width="100vw" height="313"
+              srcset="img/intro-mobile-video@1x.jpg 1x" srcset="img/header-mobile-video@2x.jpg 2x">
+              <source type="image/jpeg" media="(max-width: 1365px)" width="265" height="167"
+                srcset="img/intro-tablet-video@1x.jpg 1x" srcset="img/header-tablet-video@2x.jpg 2x">
+              <img class="logo__link" width="364" height="228" src="img/intro-desktop-video@1x.jpg 1x"
+                srcset="img/intro-desktop-video@2x.jpg 2x" alt="Фото тренажерного зала">
+            </picture>
+          </div>
         </div>
       </section>
     </main>
+    <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
+    <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
     <footer>
       <div class="container"></div>
     </footer>
