@@ -366,6 +366,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  min-width: 320px;
 }
 
 html {
@@ -1558,17 +1559,27 @@ button,
   }
 }
 
-.intro__picture img {
+.intro__picture .intro__img {
   margin: 0 auto;
 }
 @media (max-width: 767px) {
-  .intro__picture img {
+  .intro__picture .intro__img {
     width: 100vw;
+    min-width: 320px;
     max-width: 100vw;
     -o-object-fit: cover;
        object-fit: cover;
     margin-left: -15px;
     max-height: 313px;
+  }
+}
+
+.intro__picture .intro__video {
+  max-height: 228px;
+}
+@media (max-width: 767px) {
+  .intro__picture .intro__video {
+    max-height: 167px;
   }
 }
 
@@ -1579,6 +1590,7 @@ button,
 }
 @media (max-width: 1365px) {
   .intro__picture--video {
+    height: 168px;
     bottom: 10%;
     left: 30%;
   }
@@ -1598,12 +1610,24 @@ button,
   width: 100%;
   height: 100%;
   background-color: rgba(20, 54, 122, 0.5);
+  z-index: 2;
 }
 @media (max-width: 767px) {
   .intro__picture--video::before {
     width: calc(100% + 30px);
     margin-left: -15px;
   }
+}
+
+.intro__picture::before {
+  position: relative;
+}
+
+.intro__picture-button {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  content: "";
 }
 
 /* @mixin hover-focus {
