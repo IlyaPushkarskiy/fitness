@@ -61,8 +61,8 @@
                 srcset="img/header-desktop@1x.webp 1x" srcset="img/header-desktop@2x.webp 2x">
               <source type="image/png" media="(max-width: 1365px)" width="324" height="390"
                 srcset="img/header-tablet@1x.png 1x" srcset="img/header-tablet@2x.png 2x">
-              <img width="500" height="524" src="img/header-desktop@1x.png 1x"
-                srcset="img/header-desktop@2x.png 2x" alt="Супер мужик">
+              <img width="500" height="524" src="img/header-desktop@1x.png 1x" srcset="img/header-desktop@2x.png 2x"
+                alt="Супер мужик">
             </picture>
           </div>
         </div>
@@ -104,29 +104,33 @@
             </picture>
           </div>
           <div class="intro__picture intro__picture--video">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)" width="100vw" height="313"
-                srcset="img/intro-mobile-video@1x.webp 1x" srcset="img/header-mobile-video@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1365px)" width="265" height="167"
-                srcset="img/intro-tablet-video@1x.webp 1x" srcset="img/header-tablet-video@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 1366px)" width="364" height="228"
-                srcset="img/intro-desktop-video@1x.webp 1x" srcset="img/header-desktop-video@2x.webp 2x">
-              <source type="image/jpeg" media="(max-width: 767px)" width="100vw" height="313"
-                srcset="img/intro-mobile-video@1x.jpg 1x" srcset="img/header-mobile-video@2x.jpg 2x">
-              <source type="image/jpeg" media="(max-width: 1365px)" width="265" height="167"
-                srcset="img/intro-tablet-video@1x.jpg 1x" srcset="img/header-tablet-video@2x.jpg 2x">
-              <img class="intro__img intro__video" width="364" height="228" src="img/intro-desktop-video@1x.jpg 1x"
-                srcset="img/intro-desktop-video@2x.jpg 2x" alt="Фото тренажерного зала">
-            </picture>
-            <iframe style="display: none;" class="intro__img intro__img--video" width="100%" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?si=HtECxd3H0jkfEeP3"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-
+            <div class="video-wrapper">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" width="100vw" height="313"
+                  srcset="img/intro-mobile-video@1x.webp 1x" srcset="img/header-mobile-video@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1365px)" width="265" height="167"
+                  srcset="img/intro-tablet-video@1x.webp 1x" srcset="img/header-tablet-video@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1366px)" width="364" height="228"
+                  srcset="img/intro-desktop-video@1x.webp 1x" srcset="img/header-desktop-video@2x.webp 2x">
+                <source type="image/jpeg" media="(max-width: 767px)" width="100vw" height="313"
+                  srcset="img/intro-mobile-video@1x.jpg 1x" srcset="img/header-mobile-video@2x.jpg 2x">
+                <source type="image/jpeg" media="(max-width: 1365px)" width="265" height="167"
+                  srcset="img/intro-tablet-video@1x.jpg 1x" srcset="img/header-tablet-video@2x.jpg 2x">
+                <img class="intro__img intro__video" width="364" height="228" src="img/intro-desktop-video@1x.jpg 1x"
+                  srcset="img/intro-desktop-video@2x.jpg 2x" alt="Фото тренажерного зала">
+              </picture>
+              <iframe class="intro__img intro__img--video intro__img--iframe" width="100%" height="228"
+                src="https://www.youtube.com/embed/9TZXsZItgdw?si=HtECxd3H0jkfEeP3" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+              <button class="intro__picture-button" type="button" aria-label="Воспроизвести видео.">
+                <svg class="intro__picture-button-svg" width="17" heigth="17" viewBox="0 0 17 17">
+                  <use href="img/sprite.svg#play-icon"></use>
+                </svg>
+              </button>
+            </div>
           </div>
-          <button class="intro__picture-button btn" type="button" aria-label="Воспроизвести видео.">
-            Запустить видео
-          </button>
         </div>
       </section>
     </main>
@@ -157,7 +161,8 @@
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
         <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+        <button class="modal__close-btn btn-reset" data-validate="is-play" type="button" aria-label="Закрыть попап"
+          data-close-modal>
           <svg width="15" height="15">
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
