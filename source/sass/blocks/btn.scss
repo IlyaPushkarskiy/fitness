@@ -11,21 +11,54 @@
   transition: opacity $trans-default;
 
   &--red {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
     background-color: $color-torch-red;
+    border: 2px solid $color-default-white;
+    justify-content: center;
+
+    @include vp-1365 {
+      font-weight: 400;
+      padding: 22px 40px;
+    }
   }
 
   &--hero {
-    border: 2px solid #ffffff;
+    border: 2px solid $color-default-white;
     margin-left: auto;
+  }
+
+  @include hover-focus {
+    color: #103aae;
+    background-image: none;
+    background-color: $color-default-white;
+  }
+
+  @include active {
+    color: $color-default-black;
+    background-color: $color-default-white;
+  }
+
+  &--white {
+    @include hover-focus {
+      color: $color-default-white;
+      background-image: $black-to-right;
+      border: 2px solid transparent;
+      border-image: $black-to-right;
+      border-image-slice: 1;
+    }
+
+    @include active {
+      color: rgba(255, 255, 255, 0.5);
+    }
   }
 
   &:disabled {
     opacity: 0.5;
-
     pointer-events: none;
-  }
-
-  @include hover-focus {
-    opacity: 0.8;
   }
 }
