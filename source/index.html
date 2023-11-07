@@ -12,6 +12,8 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="img/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -286,7 +288,7 @@
         </div>
       </section>
       <section class="slider">
-        <div class="container">
+        <div class="container slider__wrapper">
           <h2 class="slider__title">
             Жюри
           </h2>
@@ -306,9 +308,11 @@
                   srcset="img/slider/slider-desktop-trainer1@1x.webp 1x"
                   srcset="img/slider/slider-desktop-trainer1@2x.webp 2x">
                 <source type="image/jpeg" media="(max-width: 767px)" width="226" height="274"
-                  srcset="img/slider/slider-desktop-trainer1@1x.jpg" srcset="img/slider/slider-desktop-trainer1@2x.jpg 2x">
+                  srcset="img/slider/slider-desktop-trainer1@1x.jpg"
+                  srcset="img/slider/slider-desktop-trainer1@2x.jpg 2x">
                 <source type="image/jpeg" media="(max-width: 1365px)" width="268" height="294"
-                  srcset="img/slider/slider-desktop-trainer1@1x.jpg" srcset="img/slider/slider-desktop-trainer1@2x.jpg 2x">
+                  srcset="img/slider/slider-desktop-trainer1@1x.jpg"
+                  srcset="img/slider/slider-desktop-trainer1@2x.jpg 2x">
                 <img class="slider__picture" width="260" height="294" src="img/slider/slider-desktop-trainer1@1x.jpg 1x"
                   srcset="img/slider/slider-desktop-trainer1@2x.jpg 2x" alt="Алексей Лавров">
               </picture>
@@ -347,9 +351,11 @@
                   srcset="img/slider/slider-desktop-trainer2@1x.webp 1x"
                   srcset="img/slider/slider-desktop-trainer2@2x.webp 2x">
                 <source type="image/jpeg" media="(max-width: 767px)" width="226" height="274"
-                  srcset="img/slider/slider-desktop-trainer2@1x.jpg" srcset="img/slider/slider-desktop-trainer2@2x.jpg 2x">
+                  srcset="img/slider/slider-desktop-trainer2@1x.jpg"
+                  srcset="img/slider/slider-desktop-trainer2@2x.jpg 2x">
                 <source type="image/jpeg" media="(max-width: 1365px)" width="268" height="294"
-                  srcset="img/slider/slider-desktop-trainer2@1x.jpg" srcset="img/slider/slider-desktop-trainer2@2x.jpg 2x">
+                  srcset="img/slider/slider-desktop-trainer2@1x.jpg"
+                  srcset="img/slider/slider-desktop-trainer2@2x.jpg 2x">
                 <img class="slider__picture" width="260" height="294" src="img/slider/slider-desktop-trainer2@1x.jpg 1x"
                   srcset="img/slider/slider-desktop-trainer2@2x.jpg 2x" alt="Александр Пашков">
               </picture>
@@ -373,7 +379,107 @@
                 </ul>
               </div>
             </li>
+            <li class="slider__card">
+              <h3 class="slider__card-title">
+                Мария Китова
+              </h3>
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" width="226" height="274"
+                  srcset="img/slider/slider-desktop-trainer3@1x.webp 1x"
+                  srcset="img/img/slider/slider-desktop-trainer3@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1365px)" width="268" height="294"
+                  srcset="img/slider/slider-desktop-trainer3@1x.webp 1x"
+                  srcset="img/slider/slider-desktop-trainer3@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1366px)" width="260" height="294"
+                  srcset="img/slider/slider-desktop-trainer3@1x.webp 1x"
+                  srcset="img/slider/slider-desktop-trainer3@2x.webp 2x">
+                <source type="image/jpeg" media="(max-width: 767px)" width="226" height="274"
+                  srcset="img/slider/slider-desktop-trainer3@1x.jpg"
+                  srcset="img/slider/slider-desktop-trainer3@2x.jpg 2x">
+                <source type="image/jpeg" media="(max-width: 1365px)" width="268" height="294"
+                  srcset="img/slider/slider-desktop-trainer3@1x.jpg"
+                  srcset="img/slider/slider-desktop-trainer3@2x.jpg 2x">
+                <img class="slider__picture" width="260" height="294" src="img/slider/slider-desktop-trainer3@1x.jpg 1x"
+                  srcset="img/slider/slider-desktop-trainer3@2x.jpg 2x" alt="Мария Китова">
+              </picture>
+              <div class="slider__card-info card-info">
+                <h3 class="card-info__title">
+                  Мария Китова
+                </h3>
+                <p class="card-info__additional">
+                  CrossFit
+                </p>
+                <ul class="card-info__list">
+                  <li class="card-info__item">
+                    Certified Level 5 Trainer
+                  </li>
+                  <li class="card-info__item">
+                    Победитель чемпионата Мира по CrossFit
+                  </li>
+                  <li class="card-info__item">
+                    Опыт — 5 лет
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="slider__card">
+              <h3 class="slider__card-title">
+                Анна Павловна
+              </h3>
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" width="226" height="274"
+                  srcset="img/slider/slider-desktop-trainer4@1x.webp 1x"
+                  srcset="img/img/slider/slider-desktop-trainer4@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1365px)" width="268" height="294"
+                  srcset="img/slider/slider-desktop-trainer4@1x.webp 1x"
+                  srcset="img/slider/slider-desktop-trainer4@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1366px)" width="260" height="294"
+                  srcset="img/slider/slider-desktop-trainer4@1x.webp 1x"
+                  srcset="img/slider/slider-desktop-trainer4@2x.webp 2x">
+                <source type="image/jpeg" media="(max-width: 767px)" width="226" height="274"
+                  srcset="img/slider/slider-desktop-trainer4@1x.jpg"
+                  srcset="img/slider/slider-desktop-trainer4@2x.jpg 2x">
+                <source type="image/jpeg" media="(max-width: 1365px)" width="268" height="294"
+                  srcset="img/slider/slider-desktop-trainer4@1x.jpg"
+                  srcset="img/slider/slider-desktop-trainer4@2x.jpg 2x">
+                <img class="slider__picture" width="260" height="294" src="img/slider/slider-desktop-trainer4@1x.jpg 1x"
+                  srcset="img/slider/slider-desktop-trainer4@2x.jpg 2x" alt="Анна Павловна">
+              </picture>
+              <div class="slider__card-info card-info">
+                <h3 class="card-info__title">
+                  Анна Павловна
+                </h3>
+                <p class="card-info__additional">
+                  Streching
+                </p>
+                <ul class="card-info__list">
+                  <li class="card-info__item">
+                    Certified Level 3 Trainer
+                  </li>
+                  <li class="card-info__item">
+                    Certified Air-Streching
+                  </li>
+                  <li class="card-info__item">
+                    Детские группы
+                  </li>
+                  <li class="card-info__item">
+                    Опыт — 6 лет
+                  </li>
+                </ul>
+              </div>
+            </li>
           </ul>
+
+      <button data-atr="swiper-button-prev" class="slider__button slider__prev slider-button-prev" type="button" aria-label="Посмотреть преведущий слайд">
+        <svg width="16" height="32" viewBox="0 0 16 32">
+          <use href="img/sprite.svg#prew-icon"></use>
+        </svg>
+      </button>
+      <button class="slider__button slider__next slider-button-next" type="button" aria-label="Посмотреть следующий слайд">
+        <svg width="16" height="32" viewBox="0 0 16 32">
+          <use href="img/sprite.svg#next-icon"></use>
+        </svg>
+      </button>
         </div>
 
       </section>

@@ -2232,6 +2232,15 @@ button,
   }
 }
 
+.slider {
+  padding-bottom: 120px;
+}
+
+.slider__wrapper {
+  position: relative;
+  max-width: 1366px;
+}
+
 .slider__card {
   position: relative;
   max-width: 260px;
@@ -2278,6 +2287,10 @@ button,
 }
 
 .slider__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -2292,6 +2305,37 @@ button,
   margin: 0;
   left: 55px;
   bottom: 26px;
+}
+
+.slider__button {
+  background-color: inherit;
+  border: none;
+  position: absolute;
+  left: 47px;
+  top: 57%;
+  width: 56px;
+  height: 56px;
+  stroke: #102654;
+}
+@media (hover: hover) {
+  .slider__button:hover:not(.focus-visible) {
+    border-radius: 56px;
+    border: 1px solid var(--Dark, #102654);
+  }
+}
+.slider__button.focus-visible:focus {
+  border-radius: 56px;
+  border: 1px solid var(--Dark, #102654);
+}
+.slider__button:active:not(.focus-visible) {
+  border: 1px solid var(--Dark, #102654);
+  background: var(--Dark, #102654);
+  stroke: #ffffff;
+}
+
+.slider__next {
+  left: unset;
+  right: 40px;
 }
 
 .card-info {

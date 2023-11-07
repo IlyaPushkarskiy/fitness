@@ -1,3 +1,12 @@
+.slider {
+  padding-bottom: 120px;
+}
+
+.slider__wrapper {
+  position: relative;
+  max-width: 1366px;
+}
+
 .slider__card {
   position: relative;
   max-width: 260px;
@@ -38,6 +47,8 @@
 }
 
 .slider__list {
+  display: flex;
+  gap: 40px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -52,4 +63,35 @@
   margin: 0;
   left: 55px;
   bottom: 26px;
+}
+
+.slider__button {
+  background-color: inherit;
+  border: none;
+  position: absolute;
+  left: 47px;
+  top: 57%;
+  width: 56px;
+  height: 56px;
+  stroke: #102654;
+
+  @include hover-focus {
+    border-radius: 56px;
+    border: 1px solid var(--Dark, #102654);
+  }
+
+  @include active {
+    border: 1px solid var(--Dark, #102654);
+    background: var(--Dark, #102654);
+    stroke: #ffffff;
+  }
+
+  @include disabled {
+    opacity: 0.3;
+  }
+}
+
+.slider__next {
+  left: unset;
+  right: 40px;
 }
