@@ -1,0 +1,26 @@
+.card-info {
+  display: none;
+  color: $color-default-white;
+  position: absolute;
+  top: 45px;
+  left: 10px;
+  right: 20px;
+}
+
+.card-info__title {
+  margin: 0;
+  text-align: center;
+}
+
+.card-info__additional {
+  margin: 0;
+  text-align: center;
+  color: #B6BDCC;
+}
+
+
+.card-info__list {
+  display: grid;
+  gap: 12px;
+  padding-top: 32px;
+}
