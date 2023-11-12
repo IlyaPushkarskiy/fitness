@@ -1,22 +1,22 @@
-.slider {
+.jury {
   padding-bottom: 120px;
 }
 
-.slider__wrapper {
+.jury__wrapper {
   position: relative;
   max-width: 1366px;
 }
 
-.slider__card {
+.jury__card {
   position: relative;
   max-width: 260px;
 
   @include hover-focus {
-    .slider__card-title {
+    .jury__card-title {
       display: none;
     }
 
-    .card-info {
+    .jury__card-info {
       display: block;
     }
 
@@ -26,7 +26,7 @@
   }
 }
 
-.slider__card::before {
+.jury__card::before {
   display: none;
   position: absolute;
   content: "";
@@ -35,7 +35,7 @@
   height: 100%;
 }
 
-.slider__title {
+.jury__title {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   font-style: normal;
@@ -46,7 +46,7 @@
   margin-bottom: 45px;
 }
 
-.slider__list {
+.jury__list {
   display: flex;
   gap: 40px;
   list-style: none;
@@ -54,7 +54,7 @@
   padding: 0;
 }
 
-.slider__card-title {
+.jury__card-title {
   font-size: 22px;
   font-weight: 400;
   line-height: 22px;
@@ -65,7 +65,7 @@
   bottom: 26px;
 }
 
-.slider__button {
+.jury__button {
   background-color: inherit;
   border: none;
   position: absolute;
@@ -85,13 +85,9 @@
     background: var(--Dark, #102654);
     stroke: #ffffff;
   }
-
-  @include disabled {
-    opacity: 0.3;
-  }
 }
 
-.slider__next {
+.jury__next {
   left: unset;
   right: 40px;
 }
