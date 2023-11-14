@@ -106,7 +106,7 @@
                   srcset="img/intro-desktop@2x.jpg 2x" alt="Фото тренажерного зала">
               </picture>
             </div>
-            <div class="intro__picture intro__picture--video">
+            <div class="intro__picture intro__picture--video" data-video="video-box">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" width="100vw" height="313"
                   srcset="img/intro-mobile-video@1x.webp 1x" srcset="img/header-mobile-video@2x.webp 2x">
@@ -126,7 +126,7 @@
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
-              <button class="intro__picture-button" type="button" aria-label="Воспроизвести видео.">
+              <button class="intro__picture-button" type="button" data-play-button="play-button" aria-label="Воспроизвести видео.">
                 <svg class="intro__picture-button-svg" width="17" heigth="17" viewBox="0 0 17 17">
                   <use href="img/sprite.svg#play-icon"></use>
                 </svg>
