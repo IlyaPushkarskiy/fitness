@@ -12,24 +12,92 @@
 .discounts__wrapper {
   padding-top: 120px;
   padding-bottom: 120px;
+
+  @include vp-1365 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 .discounts__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+
+.discounts__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: span 2;
+
+  @include vp-1365 {
+    grid-template-columns: 1fr auto;
+    grid-column: span 2;
+  }
+
+  @include vp-767 {
+    grid-template-columns: auto;
+  }
+}
+
+.discounts__main-info {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px 50px;
+  color: $color-default-white;
+  background-color: $color-torch-red;
+}
+
+.discounts__main-title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.discounts__main-price {
+  margin: 15px 0 25px;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.discounts__main-description {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.discounts__main-link {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: $color-default-white;
+  margin-top: auto;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $color-default-white;
+  width: max-content;
+}
+
+.discounts__main-picture {
+  object-fit: cover;
 }
 
 .discounts__card {
   display: flex;
-}
-
-.discounts__info {
-  display: flex;
   flex-direction: column;
-  padding: 40px 45px 45px;
-  color: $color-default-white;
-  background-color: $color-torch-red;
+  color: #1c3374;
+  padding: 28px;
+  border: 7px solid transparent;
+  border-image: linear-gradient(to bottom right, #d10a42, #00359f);
+  border-image-slice: 1;
 }
 
 .discounts__card-title {
@@ -40,20 +108,33 @@
 }
 
 .discounts__card-price {
-  margin: 25px 0 15px;
+  margin: 15px 0 25px;
   font-size: 70px;
   font-weight: 700;
   line-height: 70px;
 }
 
+
 .discounts__card-description {
-  margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 24px;
+  margin: 0;
+  margin-top: 10px;
 }
 
 .discounts__card-link {
-  color: $color-default-white;
-  padding-top: 174px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  margin-top: auto;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #1c3374;
+  width: max-content;
+
+  @include vp-1365 {
+    padding-top: 35px;
+  }
 }

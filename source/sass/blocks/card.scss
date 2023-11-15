@@ -9,6 +9,12 @@
   max-width: 360px;
   border: 7px solid $color-default-white;
 
+  &--daytime {
+    border: 7px solid transparent;
+    border-image: $black-to-right;
+    border-image-slice: 1;
+  }
+
   @include vp-1365 {
     padding: 56px 110px;
     max-width: 440px;
@@ -34,12 +40,6 @@
       border-image-slice: 1;
     }
   }
-}
-
-.card--daytime {
-  border: 7px solid transparent;
-  border-image: $black-to-right;
-  border-image-slice: 1;
 }
 
 .card__title {
@@ -91,7 +91,6 @@
   color: $color-torch-gradiet-blue;
   z-index: 2;
   margin: 0;
-
 }
 
 .card__value::before {
@@ -144,10 +143,10 @@
     font-weight: 700;
     padding: 22px 37px;
   }
-}
 
-.card__button--daytime {
-  background: $black-to-right;
-  color: $color-default-white;
-  border: none;
+  &--daytime {
+    background: $black-to-right;
+    color: $color-default-white;
+    border: none;
+  }
 }
