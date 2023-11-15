@@ -1,0 +1,59 @@
+.discounts__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 70px;
+}
+
+.discounts__wrapper {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.discounts__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+}
+
+.discounts__card {
+  display: flex;
+}
+
+.discounts__info {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 45px 45px;
+  color: $color-default-white;
+  background-color: $color-torch-red;
+}
+
+.discounts__card-title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.discounts__card-price {
+  margin: 25px 0 15px;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.discounts__card-description {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.discounts__card-link {
+  color: $color-default-white;
+  padding-top: 174px;
+}
