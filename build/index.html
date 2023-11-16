@@ -19,7 +19,7 @@
 <body>
   <div class="wrapper">
     <header class="page-header">
-      <div class="container">
+      <div class="container container--header">
         <nav class="page-header__nav">
           <a class="page-header__logo" href="index.html">
             Supergym
@@ -74,7 +74,7 @@
       <section class="intro">
         <div class="container intro__container">
           <div class="intro__box">
-            <h2 class="intro__title">
+            <h2 class="container__title">
               Тренажерный зал
             </h2>
             <p class="intro__description">
@@ -139,7 +139,9 @@
 
       <section class="subscription" id="price">
         <div class="container">
-          <h2 class="subscription__title">Абонементы</h2>
+          <h2 class="container__title intro__title ">
+            Абонементы
+          </h2>
           <div class="subscription__box">
             <ui class="subscription__box-list">
               <li class="subscription__box-item">
@@ -235,7 +237,7 @@
         <div class="container game__wrapper">
           <div class="game__info">
             <div class="game__box">
-              <h2 class="game__title">
+              <h2 class="game__title container__title">
                 Super Games
               </h2>
               <dl class="game__date">
@@ -290,7 +292,7 @@
       </section>
       <section class="jury">
         <div class="container jury__wrapper">
-          <h2 class="jury__title">
+          <h2 class="jury__title container__title">
             Жюри
           </h2>
           <ul class="jury__list">
@@ -472,7 +474,7 @@
 
       <section class="advantages">
         <div class="container advantages__wrapper">
-          <h2 class="advantages__title">
+          <h2 class="advantages__title container__title">
             Наши преимущества
           </h2>
           <ul class="advantages__list">
@@ -575,22 +577,22 @@
             Акции
           </h2>
           <ul class="discounts__list">
-            <li class="discounts__main">
-              <div class="discounts__main discounts__main-info">
-                <h3 class="discounts__main-title">
+            <li class="discounts__item discounts__item--main">
+              <div class="discounts__item-info">
+                <h3 class="discounts__item-title">
                   Год
                 </h3>
-                <span class="discounts__main-price">
+                <span class="discounts__item-price">
                   4999
                 </span>
-                <p class="discounts__main-description">
+                <p class="discounts__item-description">
                   Безлимитный абонемент в тренажерный зал
                 </p>
-                <a class="discounts__main-link" href="#">
+                <a class="discounts__item-link discounts__item-link--main" href="#">
                   Подробнее
                 </a>
               </div>
-              <div class="discounts__main-image">
+              <div class="discounts__item-image">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" width="290" height="330"
                     srcset="img/discounts-picture-mobile@1x.webp 1x" srcset="img/discounts-picture-mobile@2x.webp 2x">
@@ -602,44 +604,81 @@
                     srcset="img/discounts-picture-mobile@1x.jpg 1x" srcset="img/discounts-picture-mobile@2x.jpg 2x">
                   <source type="image/jpeg" media="(max-width: 1365px)" width="399" height="462"
                     srcset="img/discounts-picture-tablet@1x.jpg 1x" srcset="img/discounts-picture-tablet@2x.jpg 2x">
-                  <img class="discounts__main-picture" width="280" height="462" src="img/discounts-picture-desktop@1x.jpg 1x"
-                    srcset="img/discounts-picture-desktop@2x.jpg 2x" alt="Спортивная девушка">
+                  <img class="discounts__item-picture" width="280" height="462"
+                    src="img/discounts-picture-desktop@1x.jpg 1x" srcset="img/discounts-picture-desktop@2x.jpg 2x"
+                    alt="Спортивная девушка">
                 </picture>
               </div>
             </li>
-            <li class="discounts__card">
-              <h3 class="discounts__card-title">
+            <li class="discounts__item discounts__item--other">
+              <h3 class="discounts__item-title">
                 Месяц бесплатно
               </h3>
-              <p class="discounts__card-description">
+              <p class="discounts__item-description discounts__item-description--other">
                 Приведи друга, получи абонемент в подарок
               </p>
-              <a class="discounts__card-link" href="#">
+              <a class="discounts__item-link" href="#">
                 Подробнее
               </a>
             </li>
-            <li class="discounts__card">
-              <h3 class="discounts__card-title">
+            <li class="discounts__item discounts__item--other">
+              <h3 class="discounts__item-title">
                 Скидка 20%
               </h3>
-              <p class="discounts__card-description">
+              <p class="discounts__item-description discounts__item-description--other">
                 Корпоративный фитнес с командой
               </p>
-              <a class="discounts__card-link" href="#">
+              <a class="discounts__item-link" href="#">
                 Подробнее
               </a>
             </li>
           </ul>
         </div>
-  </div>
+      </section>
+      <section class="faq">
+        <div class="container faq__wrapper">
+          <h2 class="faq__title discounts__title">
+            Вопросы и Ответы
+          </h2>
+          <div class="faq__box">
+            <div class="faq__box-controls">
+              <button class="faq__control btn" type="button">
+                Центр
+              </button>
+              <button class="faq__control btn" type="button">
+                Абонемент
+              </button>
+              <button class="faq__control btn" type="button">
+                Услуги
+              </button>
+              <button class="faq__control btn" type="button">
+                Правила
+              </button>
+            </div>
+            <ul class="faq__list">
+              <li class="faq__item">
+                <h3 class="faq__item-title">
+                  Как стать членом фитнес-центра?
+                </h3>
+                <p class="faq__item-description">
+                  При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
+                </p>
+                <button class="faq__item-button">
+                  Раскрыть содержание
+                </button>
+              </li>
+            </ul>
+          </div>
 
-  </section>
-  </main>
-  <!-- <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
+        </div>
+
+      </section>
+    </main>
+    <!-- <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
     <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p> -->
-  <footer>
-    <div class="container"></div>
-  </footer>
+    <footer>
+      <div class="container"></div>
+    </footer>
   </div>
 
   <!-- Модалки -->
