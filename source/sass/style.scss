@@ -51,6 +51,7 @@
       @content;
     }
   }
+
 */
 /*  @include hover-focus {
       opacity: 0.8;
@@ -60,7 +61,7 @@
 // так же в сборке есть отдельный миксин для hover
 /*@mixin hover {
     @media (hover: hover) {
-      &:hover:not(.focus-visible) {
+      &:hover:not(.focus-visible):not(:disabled) {
         @content;
       }
     }

@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 43.1% 57%;
   justify-content: center;
+  padding-bottom: 0;
 
   @include vp-767 {
     grid-template-columns: auto;
@@ -70,7 +71,7 @@
   gap: 6px;
   margin: 0;
   padding-top: 4px;
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid $color-default-white;
 
   @include vp-1365 {
     gap: 3px;
@@ -103,7 +104,6 @@
     line-height: 100%;
     gap: 0;
   }
-
 }
 
 .game__description {
