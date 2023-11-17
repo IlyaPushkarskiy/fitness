@@ -43,7 +43,15 @@
     background-color: $color-default-white;
   }
 
+  &:disabled,
+  &--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
   &--white {
+    color: $color-default-black;
+
     @include hover-focus {
       color: $color-default-white;
       background-image: $black-to-right;
@@ -57,9 +65,9 @@
     }
   }
 
-  &:disabled,
-  &--disabled {
-    opacity: 0.5;
-    pointer-events: none;
+  &--active {
+    background: $black-to-right;
+    color: $color-default-white;
+    border: none;
   }
 }

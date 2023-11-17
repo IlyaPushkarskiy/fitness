@@ -156,8 +156,15 @@
     padding: 10px;
     border: 1px solid #1c3373;
     margin-left: -11px;
-    margin-top: -11px;
     margin-bottom: -5px;
+
+    @include vp-1365 {
+      margin-top: -11px;
+    }
+
+    @include vp-767 {
+      margin-left: 0;
+    }
   }
 
   @include vp-767 {
@@ -173,6 +180,11 @@
       margin-bottom: -5px;
       margin-top: auto;
       border: 1px solid #ffffff;
+
+      @include vp-767 {
+        margin-top: -11px;
+        margin-left: 0;
+      }
     }
   }
 }
