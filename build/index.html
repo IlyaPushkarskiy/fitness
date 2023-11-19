@@ -51,7 +51,7 @@
                 Кардио-зона
               </li>
             </ul>
-            <a class="hero__button btn btn--hero" href="#price">
+            <a class="hero__button btn btn--blue" href="#price">
               Купить абонемент
             </a>
           </div>
@@ -71,7 +71,7 @@
       </div>
     </header>
     <main>
-      <section class="intro">
+      <section class="intro" id="intro">
         <div class="container intro__container">
           <div class="intro__box">
             <h2 class="container__title">
@@ -118,14 +118,9 @@
                   srcset="img/intro-mobile-video@1x.jpg 1x" srcset="img/header-mobile-video@2x.jpg 2x">
                 <source type="image/jpeg" media="(max-width: 1365px)" width="265" height="167"
                   srcset="img/intro-tablet-video@1x.jpg 1x" srcset="img/header-tablet-video@2x.jpg 2x">
-                <img class="intro__img intro__video" width="364" height="228" src="img/intro-desktop-video@1x.jpg 1x"
+                <img class="intro__img intro__video " width="364" height="228" src="img/intro-desktop-video@1x.jpg 1x"
                   srcset="img/intro-desktop-video@2x.jpg 2x" alt="Фото тренажерного зала">
               </picture>
-              <iframe class="intro__img-iframe" width="100%" height="228"
-                src="https://www.youtube.com/embed/9TZXsZItgdw?si=HtECxd3H0jkfEeP3" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
               <button class="intro__picture-button" type="button" data-play-button="play-button"
                 aria-label="Воспроизвести видео.">
                 <svg class="intro__picture-button-svg" width="17" heigth="17" viewBox="0 0 17 17">
@@ -133,6 +128,31 @@
                 </svg>
               </button>
             </div>
+            <!-- <div class="video">
+              <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="100vw" height="313"
+                    srcset="img/intro-mobile-video@1x.webp 1x" srcset="img/header-mobile-video@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1365px)" width="265" height="167"
+                    srcset="img/intro-tablet-video@1x.webp 1x" srcset="img/header-tablet-video@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1366px)" width="364" height="228"
+                    srcset="img/intro-desktop-video@1x.webp 1x" srcset="img/header-desktop-video@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 767px)" width="100vw" height="313"
+                    srcset="img/intro-mobile-video@1x.jpg 1x" srcset="img/header-mobile-video@2x.jpg 2x">
+                  <source type="image/jpeg" media="(max-width: 1365px)" width="265" height="167"
+                    srcset="img/intro-tablet-video@1x.jpg 1x" srcset="img/header-tablet-video@2x.jpg 2x">
+                  <img class="video__media" width="364" height="228"
+                    src="img/intro-desktop-video@1x.jpg 1x" srcset="img/intro-desktop-video@2x.jpg 2x"
+                    alt="Фото тренажерного зала">
+                </picture>
+              </a>
+              <button class="intro__picture-button video__button" type="button" data-play-button="play-button"
+                aria-label="Воспроизвести видео.">
+                <svg class="intro__picture-button-svg" width="17" heigth="17" viewBox="0 0 17 17">
+                  <use href="img/sprite.svg#play-icon"></use>
+                </svg>
+              </button>
+            </div> -->
           </div>
         </div>
       </section>
@@ -233,7 +253,7 @@
         </div>
       </section>
 
-      <section class="game">
+      <section class="game" id="game">
         <div class="container game__wrapper">
           <div class="game__info">
             <div class="game__box">
@@ -290,185 +310,362 @@
           </div>
         </div>
       </section>
-      <section class="jury">
-        <div class="container jury__wrapper">
+
+      <section class="jury" id="jury">
+        <div class="container">
           <h2 class="jury__title container__title">
             Жюри
           </h2>
-          <ul class="jury__list">
-            <li class="jury__card">
-              <h3 class="jury__card-title">
-                Алексей Лавров
-              </h3>
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)" width="226" height="274"
-                  srcset="img/jury/jury-desktop-trainer1@1x.webp 1x"
-                  srcset="img/img/jury/jury-desktop-trainer1@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1365px)" width="268" height="294"
-                  srcset="img/jury/jury-desktop-trainer1@1x.webp 1x" srcset="img/jury/jury-desktop-trainer1@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 1366px)" width="260" height="294"
-                  srcset="img/jury/jury-desktop-trainer1@1x.webp 1x" srcset="img/jury/jury-desktop-trainer1@2x.webp 2x">
-                <source type="image/jpeg" media="(max-width: 767px)" width="226" height="274"
-                  srcset="img/jury/jury-desktop-trainer1@1x.jpg" srcset="img/jury/jury-desktop-trainer1@2x.jpg 2x">
-                <source type="image/jpeg" media="(max-width: 1365px)" width="268" height="294"
-                  srcset="img/jury/jury-desktop-trainer1@1x.jpg" srcset="img/jury/jury-desktop-trainer1@2x.jpg 2x">
-                <img class="jury__picture" width="260" height="294" src="img/jury/jury-desktop-trainer1@1x.jpg 1x"
-                  srcset="img/jury/jury-desktop-trainer1@2x.jpg 2x" alt="Алексей Лавров">
-              </picture>
-              <div class="jury__card-info card-info">
-                <h3 class="card-info__title">
+          <div class="swiper-container jury__container" data-swiper="data-jury-swiper">
+            <ul class="swiper-wrapper">
+              <li class="jury__card swiper-slide" >
+                <h3 class="jury__card-title">
                   Алексей Лавров
                 </h3>
-                <p class="card-info__additional">
-                  Квидич
-                </p>
-                <ul class="card-info__list">
-                  <li class="card-info__item">
-                    Лауреат золотого снитча 2014 года
-                  </li>
-                  <li class="card-info__item">
-                    Победитель чемпионата России по квидичу
-                  </li>
-                  <li class="card-info__item">
-                    Опыт — 7 лет
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="jury__card">
-              <h3 class="jury__card-title">
-                Александр Пашков
-              </h3>
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)" width="226" height="274"
-                  srcset="img/jury/jury-desktop-trainer2@1x.webp 1x"
-                  srcset="img/img/jury/jury-desktop-trainer2@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1365px)" width="268" height="294"
-                  srcset="img/jury/jury-desktop-trainer2@1x.webp 1x" srcset="img/jury/jury-desktop-trainer2@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 1366px)" width="260" height="294"
-                  srcset="img/jury/jury-desktop-trainer2@1x.webp 1x" srcset="img/jury/jury-desktop-trainer2@2x.webp 2x">
-                <source type="image/jpeg" media="(max-width: 767px)" width="226" height="274"
-                  srcset="img/jury/jury-desktop-trainer2@1x.jpg" srcset="img/jury/jury-desktop-trainer2@2x.jpg 2x">
-                <source type="image/jpeg" media="(max-width: 1365px)" width="268" height="294"
-                  srcset="img/jury/jury-desktop-trainer2@1x.jpg" srcset="img/jury/jury-desktop-trainer2@2x.jpg 2x">
-                <img class="jury__picture" width="260" height="294" src="img/jury/jury-desktop-trainer2@1x.jpg 1x"
-                  srcset="img/jury/jury-desktop-trainer2@2x.jpg 2x" alt="Александр Пашков">
-              </picture>
-              <div class="jury__card-info card-info">
-                <h3 class="card-info__title">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="226" height="274"
+                    srcset="img/jury/jury-desktop-trainer1@1x.webp 1x"
+                    srcset="img/img/jury/jury-desktop-trainer1@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1365px)" width="268" height="294"
+                    srcset="img/jury/jury-desktop-trainer1@1x.webp 1x"
+                    srcset="img/jury/jury-desktop-trainer1@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1366px)" width="260" height="294"
+                    srcset="img/jury/jury-desktop-trainer1@1x.webp 1x"
+                    srcset="img/jury/jury-desktop-trainer1@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 767px)" width="226" height="274"
+                    srcset="img/jury/jury-desktop-trainer1@1x.jpg" srcset="img/jury/jury-desktop-trainer1@2x.jpg 2x">
+                  <source type="image/jpeg" media="(max-width: 1365px)" width="268" height="294"
+                    srcset="img/jury/jury-desktop-trainer1@1x.jpg" srcset="img/jury/jury-desktop-trainer1@2x.jpg 2x">
+                  <img class="jury__picture" width="260" height="294" src="img/jury/jury-desktop-trainer1@1x.jpg 1x"
+                    srcset="img/jury/jury-desktop-trainer1@2x.jpg 2x" alt="Алексей Лавров">
+                </picture>
+                <div class="jury__card-info card-info">
+                  <h3 class="card-info__title">
+                    Алексей Лавров
+                  </h3>
+                  <p class="card-info__additional">
+                    Квидич
+                  </p>
+                  <ul class="card-info__list">
+                    <li class="card-info__item">
+                      Лауреат золотого снитча 2014 года
+                    </li>
+                    <li class="card-info__item">
+                      Победитель чемпионата России по квидичу
+                    </li>
+                    <li class="card-info__item">
+                      Опыт — 7 лет
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="jury__card swiper-slide">
+                <h3 class="jury__card-title">
                   Александр Пашков
                 </h3>
-                <p class="card-info__additional">
-                  CrossFit
-                </p>
-                <ul class="card-info__list">
-                  <li class="card-info__item">
-                    Certified Level 3 Trainer
-                  </li>
-                  <li class="card-info__item">
-                    Победитель чемпионата России по CrossFit
-                  </li>
-                  <li class="card-info__item">
-                    Опыт — 6 лет
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="jury__card">
-              <h3 class="jury__card-title">
-                Мария Китова
-              </h3>
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)" width="226" height="274"
-                  srcset="img/jury/jury-desktop-trainer3@1x.webp 1x"
-                  srcset="img/img/jury/jury-desktop-trainer3@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1365px)" width="268" height="294"
-                  srcset="img/jury/jury-desktop-trainer3@1x.webp 1x" srcset="img/jury/jury-desktop-trainer3@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 1366px)" width="260" height="294"
-                  srcset="img/jury/jury-desktop-trainer3@1x.webp 1x" srcset="img/jury/jury-desktop-trainer3@2x.webp 2x">
-                <source type="image/jpeg" media="(max-width: 767px)" width="226" height="274"
-                  srcset="img/jury/jury-desktop-trainer3@1x.jpg" srcset="img/jury/jury-desktop-trainer3@2x.jpg 2x">
-                <source type="image/jpeg" media="(max-width: 1365px)" width="268" height="294"
-                  srcset="img/jury/jury-desktop-trainer3@1x.jpg" srcset="img/jury/jury-desktop-trainer3@2x.jpg 2x">
-                <img class="jury__picture" width="260" height="294" src="img/jury/jury-desktop-trainer3@1x.jpg 1x"
-                  srcset="img/jury/jury-desktop-trainer3@2x.jpg 2x" alt="Мария Китова">
-              </picture>
-              <div class="jury__card-info card-info">
-                <h3 class="card-info__title">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="226" height="274"
+                    srcset="img/jury/jury-desktop-trainer2@1x.webp 1x"
+                    srcset="img/img/jury/jury-desktop-trainer2@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1365px)" width="268" height="294"
+                    srcset="img/jury/jury-desktop-trainer2@1x.webp 1x"
+                    srcset="img/jury/jury-desktop-trainer2@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1366px)" width="260" height="294"
+                    srcset="img/jury/jury-desktop-trainer2@1x.webp 1x"
+                    srcset="img/jury/jury-desktop-trainer2@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 767px)" width="226" height="274"
+                    srcset="img/jury/jury-desktop-trainer2@1x.jpg" srcset="img/jury/jury-desktop-trainer2@2x.jpg 2x">
+                  <source type="image/jpeg" media="(max-width: 1365px)" width="268" height="294"
+                    srcset="img/jury/jury-desktop-trainer2@1x.jpg" srcset="img/jury/jury-desktop-trainer2@2x.jpg 2x">
+                  <img class="jury__picture" width="260" height="294" src="img/jury/jury-desktop-trainer2@1x.jpg 1x"
+                    srcset="img/jury/jury-desktop-trainer2@2x.jpg 2x" alt="Александр Пашков">
+                </picture>
+                <div class="jury__card-info card-info">
+                  <h3 class="card-info__title">
+                    Александр Пашков
+                  </h3>
+                  <p class="card-info__additional">
+                    CrossFit
+                  </p>
+                  <ul class="card-info__list">
+                    <li class="card-info__item">
+                      Certified Level 3 Trainer
+                    </li>
+                    <li class="card-info__item">
+                      Победитель чемпионата России по CrossFit
+                    </li>
+                    <li class="card-info__item">
+                      Опыт — 6 лет
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="jury__card swiper-slide" >
+                <h3 class="jury__card-title">
                   Мария Китова
                 </h3>
-                <p class="card-info__additional">
-                  CrossFit
-                </p>
-                <ul class="card-info__list">
-                  <li class="card-info__item">
-                    Certified Level 5 Trainer
-                  </li>
-                  <li class="card-info__item">
-                    Победитель чемпионата Мира по CrossFit
-                  </li>
-                  <li class="card-info__item">
-                    Опыт — 5 лет
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="jury__card">
-              <h3 class="jury__card-title">
-                Анна Павловна
-              </h3>
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)" width="226" height="274"
-                  srcset="img/jury/jury-desktop-trainer4@1x.webp 1x"
-                  srcset="img/img/jury/jury-desktop-trainer4@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1365px)" width="268" height="294"
-                  srcset="img/jury/jury-desktop-trainer4@1x.webp 1x" srcset="img/jury/jury-desktop-trainer4@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 1366px)" width="260" height="294"
-                  srcset="img/jury/jury-desktop-trainer4@1x.webp 1x" srcset="img/jury/jury-desktop-trainer4@2x.webp 2x">
-                <source type="image/jpeg" media="(max-width: 767px)" width="226" height="274"
-                  srcset="img/jury/jury-desktop-trainer4@1x.jpg" srcset="img/jury/jury-desktop-trainer4@2x.jpg 2x">
-                <source type="image/jpeg" media="(max-width: 1365px)" width="268" height="294"
-                  srcset="img/jury/jury-desktop-trainer4@1x.jpg" srcset="img/jury/jury-desktop-trainer4@2x.jpg 2x">
-                <img class="jury__picture" width="260" height="294" src="img/jury/jury-desktop-trainer4@1x.jpg 1x"
-                  srcset="img/jury/jury-desktop-trainer4@2x.jpg 2x" alt="Анна Павловна">
-              </picture>
-              <div class="jury__card-info card-info">
-                <h3 class="card-info__title">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="226" height="274"
+                    srcset="img/jury/jury-desktop-trainer3@1x.webp 1x"
+                    srcset="img/img/jury/jury-desktop-trainer3@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1365px)" width="268" height="294"
+                    srcset="img/jury/jury-desktop-trainer3@1x.webp 1x"
+                    srcset="img/jury/jury-desktop-trainer3@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1366px)" width="260" height="294"
+                    srcset="img/jury/jury-desktop-trainer3@1x.webp 1x"
+                    srcset="img/jury/jury-desktop-trainer3@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 767px)" width="226" height="274"
+                    srcset="img/jury/jury-desktop-trainer3@1x.jpg" srcset="img/jury/jury-desktop-trainer3@2x.jpg 2x">
+                  <source type="image/jpeg" media="(max-width: 1365px)" width="268" height="294"
+                    srcset="img/jury/jury-desktop-trainer3@1x.jpg" srcset="img/jury/jury-desktop-trainer3@2x.jpg 2x">
+                  <img class="jury__picture" width="260" height="294" src="img/jury/jury-desktop-trainer3@1x.jpg 1x"
+                    srcset="img/jury/jury-desktop-trainer3@2x.jpg 2x" alt="Мария Китова">
+                </picture>
+                <div class="jury__card-info card-info">
+                  <h3 class="card-info__title">
+                    Мария Китова
+                  </h3>
+                  <p class="card-info__additional">
+                    CrossFit
+                  </p>
+                  <ul class="card-info__list">
+                    <li class="card-info__item">
+                      Certified Level 5 Trainer
+                    </li>
+                    <li class="card-info__item">
+                      Победитель чемпионата Мира по CrossFit
+                    </li>
+                    <li class="card-info__item">
+                      Опыт — 5 лет
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="jury__card swiper-slide">
+                <h3 class="jury__card-title">
                   Анна Павловна
                 </h3>
-                <p class="card-info__additional">
-                  Streching
-                </p>
-                <ul class="card-info__list">
-                  <li class="card-info__item">
-                    Certified Level 3 Trainer
-                  </li>
-                  <li class="card-info__item">
-                    Certified Air-Streching
-                  </li>
-                  <li class="card-info__item">
-                    Детские группы
-                  </li>
-                  <li class="card-info__item">
-                    Опыт — 6 лет
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-
-          <button data-atr="swiper-button-prev" class="jury__button jury__prev jury-button-prev" type="button"
-            aria-label="Посмотреть преведущий слайд">
-            <svg width="16" height="32" viewBox="0 0 16 32">
-              <use href="img/sprite.svg#prew-icon"></use>
-            </svg>
-          </button>
-          <button class="jury__button jury__next jury-button-next" type="button"
-            aria-label="Посмотреть следующий слайд">
-            <svg width="16" height="32" viewBox="0 0 16 32">
-              <use href="img/sprite.svg#next-icon"></use>
-            </svg>
-          </button>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="226" height="274"
+                    srcset="img/jury/jury-desktop-trainer4@1x.webp 1x"
+                    srcset="img/img/jury/jury-desktop-trainer4@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1365px)" width="268" height="294"
+                    srcset="img/jury/jury-desktop-trainer4@1x.webp 1x"
+                    srcset="img/jury/jury-desktop-trainer4@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1366px)" width="260" height="294"
+                    srcset="img/jury/jury-desktop-trainer4@1x.webp 1x"
+                    srcset="img/jury/jury-desktop-trainer4@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 767px)" width="226" height="274"
+                    srcset="img/jury/jury-desktop-trainer4@1x.jpg" srcset="img/jury/jury-desktop-trainer4@2x.jpg 2x">
+                  <source type="image/jpeg" media="(max-width: 1365px)" width="268" height="294"
+                    srcset="img/jury/jury-desktop-trainer4@1x.jpg" srcset="img/jury/jury-desktop-trainer4@2x.jpg 2x">
+                  <img class="jury__picture" width="260" height="294" src="img/jury/jury-desktop-trainer4@1x.jpg 1x"
+                    srcset="img/jury/jury-desktop-trainer4@2x.jpg 2x" alt="Анна Павловна">
+                </picture>
+                <div class="jury__card-info card-info">
+                  <h3 class="card-info__title">
+                    Анна Павловна
+                  </h3>
+                  <p class="card-info__additional">
+                    Streching
+                  </p>
+                  <ul class="card-info__list">
+                    <li class="card-info__item">
+                      Certified Level 3 Trainer
+                    </li>
+                    <li class="card-info__item">
+                      Certified Air-Streching
+                    </li>
+                    <li class="card-info__item">
+                      Детские группы
+                    </li>
+                    <li class="card-info__item">
+                      Опыт — 6 лет
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="jury__card swiper-slide">
+                <h3 class="jury__card-title">
+                  Алексей Лавров
+                </h3>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="226" height="274"
+                    srcset="img/jury/jury-desktop-trainer1@1x.webp 1x"
+                    srcset="img/img/jury/jury-desktop-trainer1@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1365px)" width="268" height="294"
+                    srcset="img/jury/jury-desktop-trainer1@1x.webp 1x"
+                    srcset="img/jury/jury-desktop-trainer1@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1366px)" width="260" height="294"
+                    srcset="img/jury/jury-desktop-trainer1@1x.webp 1x"
+                    srcset="img/jury/jury-desktop-trainer1@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 767px)" width="226" height="274"
+                    srcset="img/jury/jury-desktop-trainer1@1x.jpg" srcset="img/jury/jury-desktop-trainer1@2x.jpg 2x">
+                  <source type="image/jpeg" media="(max-width: 1365px)" width="268" height="294"
+                    srcset="img/jury/jury-desktop-trainer1@1x.jpg" srcset="img/jury/jury-desktop-trainer1@2x.jpg 2x">
+                  <img class="jury__picture" width="260" height="294" src="img/jury/jury-desktop-trainer1@1x.jpg 1x"
+                    srcset="img/jury/jury-desktop-trainer1@2x.jpg 2x" alt="Алексей Лавров">
+                </picture>
+                <div class="jury__card-info card-info">
+                  <h3 class="card-info__title">
+                    Алексей Лавров
+                  </h3>
+                  <p class="card-info__additional">
+                    Квидич
+                  </p>
+                  <ul class="card-info__list">
+                    <li class="card-info__item">
+                      Лауреат золотого снитча 2014 года
+                    </li>
+                    <li class="card-info__item">
+                      Победитель чемпионата России по квидичу
+                    </li>
+                    <li class="card-info__item">
+                      Опыт — 7 лет
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="jury__card swiper-slide">
+                <h3 class="jury__card-title">
+                  Александр Пашков
+                </h3>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="226" height="274"
+                    srcset="img/jury/jury-desktop-trainer2@1x.webp 1x"
+                    srcset="img/img/jury/jury-desktop-trainer2@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1365px)" width="268" height="294"
+                    srcset="img/jury/jury-desktop-trainer2@1x.webp 1x"
+                    srcset="img/jury/jury-desktop-trainer2@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1366px)" width="260" height="294"
+                    srcset="img/jury/jury-desktop-trainer2@1x.webp 1x"
+                    srcset="img/jury/jury-desktop-trainer2@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 767px)" width="226" height="274"
+                    srcset="img/jury/jury-desktop-trainer2@1x.jpg" srcset="img/jury/jury-desktop-trainer2@2x.jpg 2x">
+                  <source type="image/jpeg" media="(max-width: 1365px)" width="268" height="294"
+                    srcset="img/jury/jury-desktop-trainer2@1x.jpg" srcset="img/jury/jury-desktop-trainer2@2x.jpg 2x">
+                  <img class="jury__picture" width="260" height="294" src="img/jury/jury-desktop-trainer2@1x.jpg 1x"
+                    srcset="img/jury/jury-desktop-trainer2@2x.jpg 2x" alt="Александр Пашков">
+                </picture>
+                <div class="jury__card-info card-info">
+                  <h3 class="card-info__title">
+                    Александр Пашков
+                  </h3>
+                  <p class="card-info__additional">
+                    CrossFit
+                  </p>
+                  <ul class="card-info__list">
+                    <li class="card-info__item">
+                      Certified Level 3 Trainer
+                    </li>
+                    <li class="card-info__item">
+                      Победитель чемпионата России по CrossFit
+                    </li>
+                    <li class="card-info__item">
+                      Опыт — 6 лет
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="jury__card swiper-slide">
+                <h3 class="jury__card-title">
+                  Мария Китова
+                </h3>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="226" height="274"
+                    srcset="img/jury/jury-desktop-trainer3@1x.webp 1x"
+                    srcset="img/img/jury/jury-desktop-trainer3@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1365px)" width="268" height="294"
+                    srcset="img/jury/jury-desktop-trainer3@1x.webp 1x"
+                    srcset="img/jury/jury-desktop-trainer3@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1366px)" width="260" height="294"
+                    srcset="img/jury/jury-desktop-trainer3@1x.webp 1x"
+                    srcset="img/jury/jury-desktop-trainer3@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 767px)" width="226" height="274"
+                    srcset="img/jury/jury-desktop-trainer3@1x.jpg" srcset="img/jury/jury-desktop-trainer3@2x.jpg 2x">
+                  <source type="image/jpeg" media="(max-width: 1365px)" width="268" height="294"
+                    srcset="img/jury/jury-desktop-trainer3@1x.jpg" srcset="img/jury/jury-desktop-trainer3@2x.jpg 2x">
+                  <img class="jury__picture" width="260" height="294" src="img/jury/jury-desktop-trainer3@1x.jpg 1x"
+                    srcset="img/jury/jury-desktop-trainer3@2x.jpg 2x" alt="Мария Китова">
+                </picture>
+                <div class="jury__card-info card-info">
+                  <h3 class="card-info__title">
+                    Мария Китова
+                  </h3>
+                  <p class="card-info__additional">
+                    CrossFit
+                  </p>
+                  <ul class="card-info__list">
+                    <li class="card-info__item">
+                      Certified Level 5 Trainer
+                    </li>
+                    <li class="card-info__item">
+                      Победитель чемпионата Мира по CrossFit
+                    </li>
+                    <li class="card-info__item">
+                      Опыт — 5 лет
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="jury__card swiper-slide">
+                <h3 class="jury__card-title">
+                  Анна Павловна
+                </h3>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="226" height="274"
+                    srcset="img/jury/jury-desktop-trainer4@1x.webp 1x"
+                    srcset="img/img/jury/jury-desktop-trainer4@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1365px)" width="268" height="294"
+                    srcset="img/jury/jury-desktop-trainer4@1x.webp 1x"
+                    srcset="img/jury/jury-desktop-trainer4@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1366px)" width="260" height="294"
+                    srcset="img/jury/jury-desktop-trainer4@1x.webp 1x"
+                    srcset="img/jury/jury-desktop-trainer4@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 767px)" width="226" height="274"
+                    srcset="img/jury/jury-desktop-trainer4@1x.jpg" srcset="img/jury/jury-desktop-trainer4@2x.jpg 2x">
+                  <source type="image/jpeg" media="(max-width: 1365px)" width="268" height="294"
+                    srcset="img/jury/jury-desktop-trainer4@1x.jpg" srcset="img/jury/jury-desktop-trainer4@2x.jpg 2x">
+                  <img class="jury__picture" width="260" height="294" src="img/jury/jury-desktop-trainer4@1x.jpg 1x"
+                    srcset="img/jury/jury-desktop-trainer4@2x.jpg 2x" alt="Анна Павловна">
+                </picture>
+                <div class="jury__card-info card-info">
+                  <h3 class="card-info__title">
+                    Анна Павловна
+                  </h3>
+                  <p class="card-info__additional">
+                    Streching
+                  </p>
+                  <ul class="card-info__list">
+                    <li class="card-info__item">
+                      Certified Level 3 Trainer
+                    </li>
+                    <li class="card-info__item">
+                      Certified Air-Streching
+                    </li>
+                    <li class="card-info__item">
+                      Детские группы
+                    </li>
+                    <li class="card-info__item">
+                      Опыт — 6 лет
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <button class="jury__button jury__prev swiper-button-prev" type="button" aria-label="Посмотреть преведущий слайд"
+              data-swiper-button="data-jury-swiper-prev">
+              <svg width="16" height="32" viewBox="0 0 16 32">
+                <use href="img/sprite.svg#prev-icon"></use>
+              </svg>
+            </button>
+            <button class="jury__button jury__next swiper-button-next" type="button" aria-label="Посмотреть следующий слайд"
+              data-swiper-button="data-jury-swiper-next">
+              <svg width="16" height="32" viewBox="0 0 16 32">
+                <use href="img/sprite.svg#next-icon"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -571,7 +768,7 @@
           </ul>
         </div>
       </section>
-      <section class="discounts">
+      <section class="discounts" id="discounts">
         <div class="container discounts__wrapper">
           <h2 class="discounts__title container__title">
             Акции
@@ -706,42 +903,151 @@
         </div>
 
       </section>
+      <section class="reviews">
+        <div class="reviews__wrapper container">
+          <h2 class="reviews__title container__title">
+            Отзывы
+          </h2>
+        </div>
+      </section>
     </main>
-    <!-- <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-    <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p> -->
-    <footer>
-      <div class="container"></div>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <section class="form">
+          <h2 class="form__title container__title">
+            Бесплатное занятие
+          </h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <div class="form__wrapper">
+              <label aria-label="Ваше имя.">
+                <input class="form__input" type="text" name="name" placeholder="Имя" arial-invalid="true" required>
+              </label>
+              <label aria-label="Ваш телефон.">
+                <input class="form__input" type="tel" name="tel" placeholder="Телефон"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" arial-invalid="true" required>
+              </label>
+              <button class="form__button btn btn--blue" type="submit">
+                Отправить
+              </button>
+            </div>
+          </form>
+        </section>
+        <section class="contacts">
+          <h2 class="container__title contacts__title">
+            Контакты
+          </h2>
+          <div class="contacts__wrapper">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <h3 class="contacts__item-title">
+                  Адрес:
+                </h3>
+                <p class="contacts__item-descriptions">
+                  г. Омск, ул. 60 лет Октября, 7
+                </p>
+              </li>
+              <li class="contacts__item">
+                <h3 class="contacts__item-title">
+                  Телефон:
+                </h3>
+                <p class="contacts__item-descriptions">
+                  8-800-555-55-55
+                </p>
+              </li>
+              <li class="contacts__item">
+                <h3 class="contacts__item-title">
+                  График работы:
+                </h3>
+                <p class="contacts__item-descriptions">
+                  Пн-Вс: с 8:00 до 22:00
+                </p>
+              </li>
+              <li class="contacts__item">
+                <h3 class="contacts__item-title">
+                  Email:
+                </h3>
+                <p class="contacts__item-descriptions">
+                  omsk@supergym.ru
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="page-footer__nav-footer nav-footer">
+          <nav>
+            <div class="nav-footer__wrapper">
+              <a class="nav-footer__logo" href="index.html">
+                Supergym
+              </a>
+              <ul class="nav-footer__list">
+                <li class="nav-footer__item">
+                  <a class="nav-footer__link" href="#intro">
+                    Услуги
+                  </a>
+                </li>
+                <li class="nav-footer__item">
+                  <a class="nav-footer__link" href="#price">
+                    Абонементы
+                  </a>
+                </li>
+                <li class="nav-footer__item">
+                  <a class="nav-footer__link" href="#discounts">
+                    Акции
+                  </a>
+                </li>
+                <li class="nav-footer__item">
+                  <a class="nav-footer__link" href="#jury">
+                    Тренеры
+                  </a>
+                </li>
+                <li class="nav-footer__item">
+                  <a class="nav-footer__link" href="#game">
+                    Расписание
+                  </a>
+                </li>
+              </ul>
+              <div class="nav-footer__box">
+                <h2 class="visually-hidden">
+                  Социальные сети
+                </h2>
+                <ul class="social-list">
+                  <li class="social-list__item">
+                    <a class="social-list__link" href="https://vk.com/htmlacademy">
+                      <span class="visually-hidden">
+                        Вконтакте.
+                      </span>
+                      <svg class="social-list__icon" width="25" height="25">
+                        <use href="img/sprite.svg#vk-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a class="social-list__link" href="https://ok.ru/htmlacademy">
+                      <span class="visually-hidden">
+                        Одноклассники.
+                      </span>
+                      <svg class="social-list__icon" width="25" height="25">
+                        <use href="img/sprite.svg#ok-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a class="social-list__link" href="https://redit.com/htmlacademy">
+                      <span class="visually-hidden">
+                        Редит.
+                      </span>
+                      <svg class="social-list__icon" width="25" height="25">
+                        <use href="img/sprite.svg#redit-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </section>
+      </div>
     </footer>
-  </div>
-
-  <!-- Модалки -->
-  <div class="modal modal--preload" data-modal="feedback">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class="modal__close-btn btn-reset" data-validate="is-play" type="button" aria-label="Закрыть попап"
-          data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
   </div>
 
   <script src="js/vendor.min.js"></script>

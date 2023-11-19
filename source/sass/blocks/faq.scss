@@ -161,29 +161,39 @@
 .faq__item-toggle {
   display: none;
 
-  &:disabled+.faq__item-button {
+  &:disabled + .faq__item-button {
     opacity: 0.5;
     pointer-events: none;
   }
 }
 
-.faq__item-toggle:checked~.faq__item-description {
+.faq__item-toggle:checked ~ .faq__item-description {
   position: static;
   overflow: visible;
   clip: auto;
   height: auto;
   animation: fadeIn ease-in 0.5s;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
 }
 
-.faq__item-toggle:checked~.faq__item-button::after {
+.faq__item-toggle:checked ~ .faq__item-button::after {
   display: none;
 }
 
-.faq__item-toggle:checked~.faq__item-button {
+.faq__item-toggle:checked ~ .faq__item-button {
   background-color: #1c3374;
 }
 
 
-.faq__item-toggle:checked~.faq__item-button::before {
+.faq__item-toggle:checked ~ .faq__item-button::before {
   background-color: $color-default-white;
 }

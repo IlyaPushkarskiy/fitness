@@ -3,6 +3,11 @@
   max-width: 1366px;
 }
 
+.jury__container {
+  overflow: hidden;
+  position: relative;
+}
+
 .jury__card {
   position: relative;
   max-width: 260px;
@@ -62,8 +67,8 @@
   background-color: inherit;
   border: none;
   position: absolute;
-  left: 47px;
-  top: 57%;
+  left: -20px;
+  top: 43%;
   width: 56px;
   height: 56px;
   stroke: #102654;
