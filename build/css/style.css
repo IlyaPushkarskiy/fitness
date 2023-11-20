@@ -2409,7 +2409,7 @@ button,
 @media (max-width: 1365px) {
   .hero__button {
     width: auto;
-    padding: 22px 32px;
+    padding: 20px 32px;
   }
 }
 @media (max-width: 767px) {
@@ -2570,7 +2570,7 @@ button,
   .intro__picture--video {
     height: 168px;
     bottom: -25%;
-    left: 33%;
+    left: 30.5%;
   }
 }
 @media (max-width: 767px) {
@@ -2706,13 +2706,15 @@ button,
   display: flex;
   list-style: none;
   gap: 50px;
-  padding: 38px 0 51px;
+  padding: 38px 0 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 @media (max-width: 1365px) {
   .subscription__box-list {
+    font-size: 18px;
+    line-height: 18px;
     padding: 35px 0 60px;
     gap: 54px;
   }
@@ -2732,11 +2734,12 @@ button,
   width: 349px;
   height: 2px;
   background-color: rgba(120, 120, 120, 0.2);
-  bottom: 25px;
+  bottom: 40px;
 }
 @media (max-width: 1365px) {
   .subscription__box-list::after {
     width: 332px;
+    bottom: 44px;
   }
 }
 @media (max-width: 767px) {
@@ -3299,7 +3302,7 @@ button,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 60px 56px;
+  gap: 15px 56px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -3363,7 +3366,7 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
-  gap: 42px;
+  gap: 32px;
   max-height: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -3484,7 +3487,7 @@ button,
 }
 
 .discounts__wrapper {
-  padding-top: 120px;
+  padding-top: 114px;
   padding-bottom: 120px;
 }
 @media (max-width: 1365px) {
@@ -3556,6 +3559,28 @@ button,
     grid-column: auto;
   }
 }
+.discounts__item--other {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #1c3374;
+  padding: 22px 28px 28px;
+  border: 7px solid transparent;
+  -o-border-image: linear-gradient(to bottom right, #d10a42, #00359f);
+     border-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f));
+     border-image: linear-gradient(to bottom right, #d10a42, #00359f);
+  border-image-slice: 1;
+}
+@media (max-width: 767px) {
+  .discounts__item--other {
+    padding: 38px 57px;
+    text-align: center;
+  }
+}
 
 .discounts__item-info {
   display: -webkit-box;
@@ -3616,7 +3641,7 @@ button,
 
 .discounts__item-description {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 24px;
 }
@@ -3633,6 +3658,7 @@ button,
   }
 }
 .discounts__item-description--other {
+  color: #1c3374;
   padding-top: 10px;
 }
 
@@ -3704,29 +3730,6 @@ button,
   }
 }
 
-.discounts__item--other {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: #1c3374;
-  padding: 22px 28px;
-  border: 7px solid transparent;
-  -o-border-image: linear-gradient(to bottom right, #d10a42, #00359f);
-     border-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f));
-     border-image: linear-gradient(to bottom right, #d10a42, #00359f);
-  border-image-slice: 1;
-}
-@media (max-width: 767px) {
-  .discounts__item--other {
-    padding: 38px 57px;
-    text-align: center;
-  }
-}
-
 .faq {
   background-color: #f8f9fc;
 }
@@ -3793,7 +3796,7 @@ button,
       -ms-flex-pack: center;
           justify-content: center;
   border: 1px solid rgba(16, 38, 84, 0.2);
-  background-color: #ffffff;
+  background-color: #f8f9fc;
 }
 @media (max-width: 767px) {
   .faq__control {
@@ -3862,7 +3865,7 @@ button,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   color: #102654;
-  padding-top: 33px;
+  padding-top: 25px;
   padding-bottom: 25px;
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 }
@@ -4052,7 +4055,7 @@ button,
 }
 
 .form {
-  padding: 60px 103px;
+  padding: 60px 170px 54px 103px;
   background-color: #102654;
 }
 @media (max-width: 1365px) {
@@ -4181,7 +4184,7 @@ button,
   display: grid;
   -ms-grid-columns: auto auto;
   grid-template-columns: auto auto;
-  gap: 15px 120px;
+  gap: 15px 76px;
   padding: 0;
   margin: 0;
   list-style: none;

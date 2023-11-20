@@ -9,7 +9,7 @@
 }
 
 .discounts__wrapper {
-  padding-top: 120px;
+  padding-top: 114px;
   padding-bottom: 120px;
 
   @include vp-1365 {
@@ -60,6 +60,21 @@
     @include vp-767 {
       grid-template-columns: auto;
       grid-column: auto;
+    }
+  }
+
+  &--other {
+    display: flex;
+    flex-direction: column;
+    color: #1c3374;
+    padding: 22px 28px 28px;
+    border: 7px solid transparent;
+    border-image: linear-gradient(to bottom right, #d10a42, #00359f);
+    border-image-slice: 1;
+
+    @include vp-767 {
+      padding: 38px 57px;
+      text-align: center;
     }
   }
 }
@@ -113,9 +128,10 @@
 
 .discounts__item-description {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 24px;
+
 
   @include vp-1365 {
     margin-bottom: 45px;
@@ -128,6 +144,7 @@
   }
 
   &--other {
+    color: #1c3374;
     padding-top: 10px;
   }
 }
@@ -189,20 +206,5 @@
 
   @include vp-767 {
     margin: 0 auto;
-  }
-}
-
-.discounts__item--other {
-  display: flex;
-  flex-direction: column;
-  color: #1c3374;
-  padding: 22px 28px;
-  border: 7px solid transparent;
-  border-image: linear-gradient(to bottom right, #d10a42, #00359f);
-  border-image-slice: 1;
-
-  @include vp-767 {
-    padding: 38px 57px;
-    text-align: center;
   }
 }

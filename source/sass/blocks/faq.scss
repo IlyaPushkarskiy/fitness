@@ -46,7 +46,7 @@
   padding: 18px 48px;
   justify-content: center;
   border: 1px solid rgba(16, 38, 84, 0.2);
-  background-color: $color-default-white;
+  background-color: #f8f9fc;
 
   @include vp-767 {
     font-size: 16px;
@@ -112,7 +112,7 @@
   row-gap: 4px;
   flex-wrap: wrap;
   color: #102654;
-  padding-top: 33px;
+  padding-top: 25px;
   padding-bottom: 25px;
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 
