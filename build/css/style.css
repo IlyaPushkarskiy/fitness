@@ -332,7 +332,7 @@ template {
   font-style: normal;
 }
 :root {
-  --swiper-theme-color: #007aff;
+  --swiper-theme-color: #102654;
 }
 
 .swiper {
@@ -3136,10 +3136,26 @@ button,
   position: relative;
   max-width: 1366px;
 }
+@media (max-width: 767px) {
+  .jury__wrapper {
+    width: 226px;
+  }
+}
 
 .jury__container {
-  overflow: hidden;
   position: relative;
+  width: 1366px;
+  margin: 0 auto;
+}
+@media (max-width: 1365px) {
+  .jury__container {
+    width: 568px;
+  }
+}
+@media (max-width: 767px) {
+  .jury__container {
+    width: 226px;
+  }
 }
 
 .jury__card {
@@ -3215,6 +3231,7 @@ button,
   width: 56px;
   height: 56px;
   stroke: #102654;
+  color: #102654;
 }
 @media (hover: hover) {
   .jury__button:hover:not(.focus-visible) {
@@ -3244,6 +3261,7 @@ button,
   top: 45px;
   left: 10px;
   right: 20px;
+  overflow-y: auto;
 }
 
 .card-info__title {
@@ -3943,6 +3961,94 @@ button,
 
 .reviews__title {
   text-align: center;
+  margin-bottom: 42px;
+}
+
+.reviews__container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.reviews__slider-wrapper {
+  width: 560px;
+}
+@media (max-width: 1365px) {
+  .reviews__slider-wrapper {
+    width: 580px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__slider-wrapper {
+    width: 226px;
+  }
+}
+
+.reviews__slider-card {
+  color: #ffffff;
+  background-color: #1c3374;
+}
+.reviews__slider-card--red {
+  background-color: red;
+}
+
+.reviews__card-wrapper {
+  padding: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
+  gap: 30px;
+}
+@media (max-width: 1365px) {
+  .reviews__card-wrapper {
+    padding: 60px 65px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__card-wrapper {
+    padding: 30px 25px;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+.reviews__card-title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 21px;
+}
+@media (max-width: 1365px) {
+  .reviews__card-title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 13px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__card-title {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+}
+
+.reviews__card-comments {
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .reviews__card-comments {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .reviews__card-picture {
+    margin: 0 auto;
+  }
 }
 
 .form {

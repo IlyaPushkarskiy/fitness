@@ -1,8 +1,9 @@
-import { iosVhFix } from './utils/ios-vh-fix';
-import { initModals } from './modules/modals/init-modals';
-import { Form } from './modules/form-validate/form';
-import { findVideos } from './modules/video';
-import { initJurySlider } from './modules/jury-slider';
+import {iosVhFix} from './utils/ios-vh-fix';
+import {initModals} from './modules/modals/init-modals';
+import {Form} from './modules/form-validate/form';
+import {findVideos} from './modules/video';
+import {initJurySlider} from './modules/jury-slider';
+import {initReviewsSlider} from './modules/reviews-slider';
 
 // ---------------------------------
 
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     findVideos();
     initJurySlider();
+    initReviewsSlider();
   });
 });
 

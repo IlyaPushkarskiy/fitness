@@ -1,20 +1,14 @@
 const initJurySlider = () => {
-  const swiperWrapper = document.querySelector('.swiper-container');
-  const buttonPrev = document.querySelector('.jury__prev');
-  const buttonNext = document.querySelector('.jury__next');
-  const slides = document.querySelectorAll('[data-slide]');
-  const slidesArray = [...slides];
+  const sliderJury = document.querySelector('[data-swiper="jury"]');
+  const buttonPrev = document.querySelector('[data-button="prev-jury"]');
+  const buttonNext = document.querySelector('[data-button="next-jury"]');
 
-  slidesArray.forEach((slide) =>{
-    slide.setAttribute('tabindex', '0');
-  });
-
-  var mySwiper = new window.Swiper(swiperWrapper, {
+  let mySwiper = new window.Swiper(sliderJury, {
     // Настройки слайдера
     loop: true,
     navigation: {
-      nextEl: buttonPrev,
-      prevEl: buttonNext,
+      nextEl: buttonNext,
+      prevEl: buttonPrev,
     },
     breakpoints: {
       1366: {
@@ -32,6 +26,6 @@ const initJurySlider = () => {
     },
   });
   return mySwiper;
-}
+};
 export {initJurySlider};
 

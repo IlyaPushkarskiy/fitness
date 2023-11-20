@@ -2,7 +2,7 @@ function findVideos() {
   let videos = document.querySelectorAll('.video');
 
   for (let i = 0; i < videos.length; i++) {
-      setupVideo(videos[i]);
+    setupVideo(videos[i]);
   }
 }
 
@@ -13,11 +13,11 @@ function setupVideo(video) {
   let id = parseMediaURL(media);
 
   video.addEventListener('click', () => {
-      let iframe = createIframe(id);
+    let iframe = createIframe(id);
 
-      link.remove();
-      button.remove();
-      video.appendChild(iframe);
+    link.remove();
+    button.remove();
+    video.appendChild(iframe);
   });
 
   link.removeAttribute('href');
@@ -49,4 +49,4 @@ function generateURL(id) {
   return 'https://www.youtube.com/embed/' + id + query;
 }
 
-export {findVideos};
+export { findVideos };
