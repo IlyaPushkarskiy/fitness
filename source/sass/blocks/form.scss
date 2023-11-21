@@ -60,4 +60,12 @@
   margin-left: 0;
   justify-content: center;
   background-color: #102654;
+
+  @include vp-1365 {
+    padding: 21px 197px;
+  }
+
+  @include vp-1365 {
+    padding: 22px 106px;
+  }
 }

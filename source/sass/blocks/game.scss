@@ -20,6 +20,10 @@
     max-height: 324px;
     padding: 40px 45px 45px;
   }
+
+  @include vp-767 {
+    padding: 40px 40px 35px;
+  }
 }
 
 .game__box {
@@ -31,6 +35,10 @@
   @include vp-1365 {
     column-gap: 40px;
     row-gap: 10px;
+  }
+
+  @include vp-767 {
+    column-gap: 50px;
   }
 }
 
@@ -57,6 +65,11 @@
   @include vp-1365 {
     gap: 0;
   }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 20px
+  }
 }
 
 .game__date-name {
@@ -64,6 +77,11 @@
   font-weight: 300;
   line-height: 24px;
   grid-column: 1/3;
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 20px
+  }
 }
 
 .game__date-value {
@@ -112,6 +130,11 @@
 
   @include vp-1365 {
     margin: 6px 0 21px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 20px
   }
 }
 

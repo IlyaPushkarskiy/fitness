@@ -2249,6 +2249,11 @@ button,
   padding-top: 30px;
   padding-bottom: 30px;
 }
+@media (max-width: 1365px) {
+  .page-header__nav {
+    padding: 15px 0 51px;
+  }
+}
 
 .page-header__logo {
   font-size: 26px;
@@ -2379,6 +2384,7 @@ button,
     font-size: 62px;
     line-height: 70px;
     letter-spacing: 1.86px;
+    margin: 15px 0 58px;
   }
 }
 
@@ -2394,6 +2400,11 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 4;
   grid-row: 1/5;
+}
+@media (max-width: 767px) {
+  .hero__list {
+    margin-top: 124px;
+  }
 }
 
 .hero__button {
@@ -2450,7 +2461,7 @@ button,
 }
 @media (max-width: 767px) {
   .intro__container {
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     gap: 50px;
   }
 }
@@ -2475,7 +2486,7 @@ button,
 }
 @media (max-width: 767px) {
   .intro__description {
-    margin: 13px 0 40px;
+    margin: 10px 0 40px;
     font-size: 18px;
     line-height: 20px;
   }
@@ -2492,6 +2503,8 @@ button,
 }
 @media (max-width: 767px) {
   .intro__content {
+    font-size: 14px;
+    line-height: 22px;
     margin: 0;
     max-width: auto;
   }
@@ -2569,8 +2582,8 @@ button,
 @media (max-width: 1365px) {
   .intro__picture--video {
     height: 168px;
-    bottom: -25%;
-    left: 33%;
+    bottom: -23%;
+    left: 31%;
   }
 }
 @media (max-width: 767px) {
@@ -2742,6 +2755,7 @@ button,
 @media (max-width: 767px) {
   .subscription__box-list::after {
     width: 290px;
+    bottom: 35px;
   }
 }
 
@@ -2767,6 +2781,11 @@ button,
             flex-direction: column;
     -ms-flex-line-pack: center;
         align-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .subscription__price-list {
+    gap: 32px;
   }
 }
 
@@ -2820,7 +2839,7 @@ button,
 }
 @media (max-width: 767px) {
   .card {
-    padding: 30px 42px;
+    padding: 45px 40px;
     grid-column: -1/1;
   }
 }
@@ -2879,6 +2898,13 @@ button,
 @media (max-width: 1365px) {
   .card__explanation {
     padding-top: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .card__explanation {
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 11px;
   }
 }
 
@@ -3008,6 +3034,11 @@ button,
     padding: 40px 45px 45px;
   }
 }
+@media (max-width: 767px) {
+  .game__info {
+    padding: 40px 40px 35px;
+  }
+}
 
 .game__box {
   display: -ms-grid;
@@ -3025,6 +3056,13 @@ button,
        -moz-column-gap: 40px;
             column-gap: 40px;
     row-gap: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .game__box {
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
   }
 }
 
@@ -3058,6 +3096,12 @@ button,
     gap: 0;
   }
 }
+@media (max-width: 767px) {
+  .game__date {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
 
 .game__date-name {
   font-size: 18px;
@@ -3066,6 +3110,12 @@ button,
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
+}
+@media (max-width: 767px) {
+  .game__date-name {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .game__date-value {
@@ -3124,6 +3174,12 @@ button,
     margin: 6px 0 21px;
   }
 }
+@media (max-width: 767px) {
+  .game__description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
 
 @media (max-width: 767px) {
   .game__picture {
@@ -3149,7 +3205,7 @@ button,
 }
 @media (max-width: 1365px) {
   .jury__container {
-    width: 568px;
+    width: 600px;
   }
 }
 @media (max-width: 767px) {
@@ -3197,6 +3253,7 @@ button,
 }
 @media (max-width: 1365px) {
   .jury__title {
+    margin-bottom: 37px;
     text-align: center;
   }
 }
@@ -3254,6 +3311,12 @@ button,
   right: 40px;
 }
 
+@media (max-width: 1365px) {
+  .jury__picture {
+    height: 294px;
+  }
+}
+
 .card-info {
   display: none;
   color: #ffffff;
@@ -3284,6 +3347,10 @@ button,
 
 .advantages {
   background-color: #f8f9fc;
+}
+
+.advantages__wrapper {
+  padding-top: 55px;
 }
 
 .advantages__title {
@@ -3320,7 +3387,7 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 35px;
+    gap: 32px;
   }
 }
 
@@ -3338,6 +3405,7 @@ button,
 }
 @media (max-width: 767px) {
   .advantages__item {
+    gap: 5px;
     max-height: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3394,6 +3462,7 @@ button,
     max-width: 100vw;
     min-width: 320px;
     margin-left: -15px;
+    padding: 30px 0 20px;
   }
 }
 
@@ -3471,6 +3540,11 @@ button,
     padding-bottom: 25px;
   }
 }
+@media (max-width: 767px) {
+  .advantages__item-quantity--main {
+    padding-bottom: 4px;
+  }
+}
 
 .discounts__title {
   text-align: center;
@@ -3519,6 +3593,7 @@ button,
 }
 @media (max-width: 767px) {
   .discounts__list {
+    gap: 36px;
     -ms-grid-columns: auto;
     grid-template-columns: auto;
     -ms-grid-rows: auto;
@@ -3739,6 +3814,11 @@ button,
     text-align: center;
   }
 }
+@media (max-width: 767px) {
+  .faq__title {
+    padding-bottom: 30px;
+  }
+}
 
 .faq__box {
   display: -ms-grid;
@@ -3866,6 +3946,11 @@ button,
   padding-bottom: 25px;
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 }
+@media (max-width: 1365px) {
+  .faq__item {
+    padding-top: 22px;
+  }
+}
 @media (max-width: 767px) {
   .faq__item {
     padding-top: 22px;
@@ -3906,6 +3991,11 @@ button,
   font-size: 18px;
   font-weight: 300;
   line-height: 24px;
+}
+@media (max-width: 1365px) {
+  .faq__item-description {
+    max-width: 559px;
+  }
 }
 @media (max-width: 767px) {
   .faq__item-description {
@@ -4138,6 +4228,16 @@ button,
           justify-content: center;
   background-color: #102654;
 }
+@media (max-width: 1365px) {
+  .form__button {
+    padding: 21px 197px;
+  }
+}
+@media (max-width: 1365px) {
+  .form__button {
+    padding: 22px 106px;
+  }
+}
 
 .page-footer__wrapper {
   display: -ms-grid;
@@ -4188,7 +4288,7 @@ button,
 }
 @media (max-width: 1365px) {
   .contacts__list {
-    gap: 27px 141px;
+    gap: 27px 57px;
   }
 }
 @media (max-width: 767px) {
@@ -4240,7 +4340,7 @@ button,
 }
 @media (max-width: 1365px) {
   .nav-footer {
-    padding: 47px 45px;
+    padding: 37px 45px;
   }
 }
 @media (max-width: 767px) {

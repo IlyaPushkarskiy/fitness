@@ -8,6 +8,9 @@
   @include vp-1365 {
     text-align: center;
   }
+  @include vp-767 {
+    padding-bottom: 30px;
+  }
 }
 
 .faq__box {
@@ -116,6 +119,10 @@
   padding-bottom: 25px;
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 
+  @include vp-1365 {
+    padding-top: 22px;
+  }
+
   @include vp-767 {
     padding-top: 22px;
     padding-bottom: 20px;
@@ -151,6 +158,10 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 24px;
+
+  @include vp-1365 {
+    max-width: 559px;
+  }
 
   @include vp-767 {
     font-size: 16px;

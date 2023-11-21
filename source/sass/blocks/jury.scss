@@ -13,7 +13,7 @@
   margin: 0 auto;
 
   @include vp-1365 {
-    width: 568px;
+    width: 600px;
   }
 
   @include vp-767 {
@@ -53,6 +53,7 @@
   margin-bottom: 45px;
 
   @include vp-1365 {
+    margin-bottom: 37px;
     text-align: center;
   }
 }
@@ -102,4 +103,11 @@
 .jury__next {
   left: unset;
   right: 40px;
+}
+
+.jury__picture{
+
+  @include vp-1365 {
+    height: 294px;
+  }
 }
