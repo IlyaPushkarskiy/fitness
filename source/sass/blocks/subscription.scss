@@ -5,9 +5,15 @@
 
 .subscription__title {
   margin: 0 auto;
+  margin-top: 6px;
   text-align: center;
 
+  @include vp-1365 {
+    margin-top: 0;
+  }
+
   @include vp-767 {
+    margin-top: 3px;
     grid-column: -1/1;
   }
 }
@@ -21,13 +27,13 @@
   display: flex;
   list-style: none;
   gap: 50px;
-  padding: 38px 0 50px;
+  padding: 34px 0 36px;
   justify-content: center;
 
   @include vp-1365 {
     font-size: 18px;
     line-height: 18px;
-    padding: 35px 0 60px;
+    padding: 37px 0 45px;
     gap: 54px;
   }
 
@@ -35,7 +41,7 @@
     font-size: 16px;
     line-height: 16px;
     gap: 45px;
-    padding: 24px 0 53px;
+    padding: 23px 0 38px;
   }
 }
 
@@ -45,7 +51,7 @@
   width: 349px;
   height: 2px;
   background-color: rgba(120, 120, 120, 0.2);
-  bottom: 40px;
+  bottom: 36px;
 
   @include vp-1365 {
     width: 332px;
@@ -54,6 +60,17 @@
 
   @include vp-767 {
     width: 290px;
+    bottom: 35px;
+  }
+}
+
+.subscription__box-item {
+  color: rgba(16, 38, 84, 0.5);
+
+  &--active {
+    color: #102654;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #d10a42;
   }
 }
 
@@ -67,19 +84,24 @@
   justify-content: center;
 
   @include vp-1365 {
+    gap: 42px;
     flex-direction: column;
     align-content: center;
+  }
+
+  @include vp-767 {
+    gap: 32px;
   }
 }
 
 .subscription__pancakes {
   position: absolute;
   right: 0;
-  bottom: -165px;
+  bottom: -150px;
 
   @include vp-1365 {
-    bottom: -110px;
-    right: 20px;
+    bottom: -147px;
+    right: 0;
   }
 
   @include vp-767 {

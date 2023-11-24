@@ -8,6 +8,10 @@
   @include vp-1365 {
     text-align: center;
   }
+
+  @include vp-767 {
+    padding-bottom: 30px;
+  }
 }
 
 .faq__box {
@@ -27,7 +31,7 @@
 .faq__box-controls {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 
   @include vp-1365 {
     display: grid;
@@ -113,8 +117,14 @@
   flex-wrap: wrap;
   color: #102654;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+
+  @include vp-1365 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    row-gap: 1px;
+  }
 
   @include vp-767 {
     padding-top: 22px;
@@ -151,6 +161,10 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 24px;
+
+  @include vp-1365 {
+    max-width: 559px;
+  }
 
   @include vp-767 {
     font-size: 16px;
@@ -196,4 +210,12 @@
 
 .faq__item-toggle:checked ~ .faq__item-button::before {
   background-color: $color-default-white;
+}
+
+.faq__br-tablet {
+  display: none;
+
+  @include vp-1365 {
+    display: block;
+  }
 }

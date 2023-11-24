@@ -9,7 +9,7 @@
 }
 
 .discounts__wrapper {
-  padding-top: 114px;
+  padding-top: 117px;
   padding-bottom: 120px;
 
   @include vp-1365 {
@@ -37,6 +37,7 @@
   }
 
   @include vp-767 {
+    gap: 36px;
     grid-template-columns: auto;
     grid-template-rows: auto;
   }
@@ -82,7 +83,7 @@
 .discounts__item-info {
   display: flex;
   flex-direction: column;
-  padding: 40px 45px;
+  padding: 45px 45px;
   color: $color-default-white;
   background-color: $color-torch-red;
 
@@ -147,6 +148,11 @@
     color: #1c3374;
     padding-top: 10px;
   }
+
+  &--main {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .discounts__item-link {
@@ -186,6 +192,7 @@
   &--main {
     color: $color-default-white;
     border-bottom: 1px solid $color-default-white;
+    padding-bottom: 2px;
 
     @include focus {
       margin-left: -11px;

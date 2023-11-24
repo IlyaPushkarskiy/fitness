@@ -13,7 +13,7 @@
   margin: 0 auto;
 
   @include vp-1365 {
-    width: 568px;
+    width: 642px;
   }
 
   @include vp-767 {
@@ -53,6 +53,7 @@
   margin-bottom: 45px;
 
   @include vp-1365 {
+    margin-bottom: 37px;
     text-align: center;
   }
 }
@@ -99,7 +100,35 @@
   }
 }
 
-.jury__next {
-  left: unset;
+.jury__prev.swiper-button-prev {
+  left: 42px;
+  top: 367px;
+  color: #102654;
+  width: 16px;
+  height: 32px;
+
+  @include vp-1365 {
+    left: -36px;
+    top: 58%;
+  }
+}
+
+
+.jury__next.swiper-button-next {
+  top: 367px;
   right: 40px;
+  color: #102654;
+
+  @include vp-1365 {
+    right: -36px;
+    top: 58%;
+  }
+}
+
+
+.jury__picture {
+  @include vp-1365 {
+    width: 268px;
+    height: 296px;
+  }
 }

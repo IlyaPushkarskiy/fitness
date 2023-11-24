@@ -1,6 +1,6 @@
 .btn {
   display: inline-flex;
-  padding: 27px 56px;
+  padding: 25px 55px;
 
   color: $color-default-white;
 
@@ -23,7 +23,11 @@
 
     @include vp-1365 {
       font-weight: 400;
-      padding: 22px 40px;
+      padding: 20px 40px;
+    }
+
+    @include vp-767 {
+      padding: 21px 40px;
     }
   }
 

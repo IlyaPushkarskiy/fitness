@@ -1,6 +1,10 @@
 .reviews__title {
   text-align: center;
-  margin-bottom: 42px;
+  margin-bottom: 46px;
+
+  @include vp-1365 {
+    margin-bottom: 43px;
+  }
 }
 
 .reviews__container {
@@ -80,5 +84,27 @@
 .reviews__card-picture {
   @include vp-767 {
     margin: 0 auto;
+  }
+}
+
+.reviews__slider-button.swiper-button-prev {
+  top: 59%;
+  left: 25%;
+  color: #102654;
+
+  @include vp-1365 {
+    top: 59%;
+    left: 6%;
+  }
+}
+
+.reviews__slider-button.swiper-button-next {
+  top: 59%;
+  right: 25%;
+  color: #102654;
+
+  @include vp-1365 {
+    top: 59%;
+    right: 6%;
   }
 }

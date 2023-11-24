@@ -4,7 +4,7 @@
   padding: 40px 103px;
 
   @include vp-1365 {
-    padding: 47px 45px;
+    padding: 44px 45px;
   }
 
   @include vp-767 {
@@ -50,9 +50,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+  margin-left: -17px;
 
   @include vp-1365 {
     gap: 30px;
+    margin-left: -6px;
   }
 
   @include vp-767 {

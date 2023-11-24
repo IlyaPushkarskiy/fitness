@@ -1,6 +1,6 @@
 .card {
   background-color: $color-default-white;
-  padding: 56px 77px;
+  padding: 60px 79px 57px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -9,20 +9,24 @@
   max-width: 360px;
   border: 7px solid $color-default-white;
 
-  &--daytime {
-    border: 7px solid transparent;
-    border-image: $black-to-right;
-    border-image-slice: 1;
-  }
-
   @include vp-1365 {
-    padding: 56px 110px;
+    padding: 59px 110px 56px;
     max-width: 440px;
   }
 
   @include vp-767 {
-    padding: 30px 42px;
+    padding: 45px 40px;
     grid-column: -1/1;
+  }
+
+  &--daytime {
+    border: 7px solid transparent;
+    border-image: linear-gradient(to bottom right, #d10a42, #00359f);
+    border-image-slice: 1;
+
+    @include vp-767 {
+      padding: 44px 35px;
+    }
   }
 }
 
@@ -59,10 +63,16 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
-  padding-top: 11px;
+  padding-top: 7px;
 
   @include vp-1365 {
-    padding-top: 18px;
+    padding-top: 16px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 11px;
   }
 }
 
@@ -72,14 +82,14 @@
   font-weight: 700;
   gap: 14px;
   line-height: 150%;
-  padding: 66px 0 35px;
+  padding: 68px 0 34px;
 
   @include vp-1365 {
     padding: 72px 0 24px;
   }
 
   @include vp-767 {
-    padding: 62px 0 22px;
+    padding: 62px 0 23px;
     font-size: 48px;
     font-weight: 700;
     line-height: 150%;
@@ -108,6 +118,8 @@
 
   @include vp-767 {
     font-size: 80px;
+    top: -43px;
+    left: -14px;
   }
 }
 
@@ -128,25 +140,31 @@
   font-weight: 700;
   line-height: 12px;
   text-transform: uppercase;
-  padding: 27px 37px;
+  padding: 26px 43px;
   background-color: $color-default-white;
   color: $color-default-black;
   border: 2px solid $color-default-black;
   letter-spacing: 0.4px;
+  width: 205px;
 
   @include vp-1365 {
     font-weight: 400;
-    padding: 22px 44px;
+    padding: 21px 44px;
   }
 
   @include vp-767 {
     font-weight: 700;
-    padding: 22px 37px;
+    padding: 22px 40px 20px;
   }
 
   &--daytime {
     background: $black-to-right;
     color: $color-default-white;
     border: none;
+    padding: 28px 43px;
+
+    @include vp-1365 {
+      padding: 23px 43px;
+    }
   }
 }

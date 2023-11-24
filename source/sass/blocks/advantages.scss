@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: 29.3% 20.7% 29.3%;
   justify-content: center;
-  gap: 15px 56px;
+  gap: 31px 59px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -24,7 +24,7 @@
   @include vp-767 {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 32px;
   }
 }
 
@@ -38,6 +38,7 @@
   }
 
   @include vp-767 {
+    gap: 5px;
     max-height: none;
     flex-direction: column;
     text-align: center;
@@ -59,7 +60,7 @@
     gap: 32px;
     max-height: none;
     flex-direction: column;
-    padding: 70px 34px 86px;
+    padding: 73px 34px 82px;
     text-align: center;
     background-color: #1c3374;
     color: #ffffff;
@@ -70,7 +71,7 @@
       max-width: 400px;
       margin: 0 auto;
       padding: 35px;
-      gap: 25px;
+      gap: 22px;
     }
 
     @include vp-767 {
@@ -78,6 +79,7 @@
       max-width: 100vw;
       min-width: 320px;
       margin-left: -15px;
+      padding: 30px 0 20px;
     }
   }
 }
@@ -131,6 +133,11 @@
     font-weight: 700;
     line-height: 26px;
     color: #ffffff;
+
+    @include vp-1365 {
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 }
 
@@ -149,6 +156,10 @@
 
     @include vp-1365 {
       padding-bottom: 25px;
+    }
+
+    @include vp-767 {
+      padding-bottom: 4px;
     }
   }
 }
