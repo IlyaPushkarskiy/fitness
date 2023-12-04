@@ -24,7 +24,7 @@
           <a class="page-header__logo" href="index.html">
             Supergym
           </a>
-          <a class="page-header__logo page-header__phone" href="tel: +7 (800) 555-55-55">
+          <a class="page-header__logo page-header__phone" href="tel:+7(800)555-55-55">
             8-800-555-55-55
           </a>
         </nav>
@@ -58,12 +58,12 @@
           <div class="hero__picture">
             <picture>
               <source type="image/webp" media="(max-width: 1365px)" width="324" height="390"
-                srcset="img/header-tablet@1x.webp 1x" srcset="img/header-tablet@2x.webp 2x">
+                srcset="img/header-tablet@1x.webp 1x, img/header-tablet@2x.webp 2x">
               <source type="image/webp" media="(min-width: 1366px)" width="500" height="524"
-                srcset="img/header-desktop@1x.webp 1x" srcset="img/header-desktop@2x.webp 2x">
+                srcset="img/header-desktop@1x.webp 1x, img/header-desktop@2x.webp 2x">
               <source type="image/png" media="(max-width: 1365px)" width="324" height="390"
-                srcset="img/header-tablet@1x.png 1x" srcset="img/header-tablet@2x.png 2x">
-              <img width="500" height="524" src="img/header-desktop@1x.png 1x" srcset="img/header-desktop@2x.png 2x"
+                srcset="img/header-tablet@1x.png 1x, img/header-tablet@2x.png 2x">
+              <img width="500" height="524" src="img/header-desktop@1x.png" srcset="img/header-desktop@2x.png 2x"
                 alt="Супер мужик">
             </picture>
           </div>
@@ -95,36 +95,39 @@
             <div class="intro__picture">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" width="320" height="313"
-                  srcset="img/intro-mobile@1x.webp 1x" srcset="img/header-mobile@2x.webp 2x">
+                  srcset="img/intro-mobile@1x.webp 1x, img/header-mobile@2x.webp 2x">
                 <source type="image/webp" media="(max-width: 1365px)" width="678" height="345"
-                  srcset="img/intro-tablet@1x.webp 1x" srcset="img/header-tablet@2x.webp 2x">
+                  srcset="img/intro-tablet@1x.webp 1x, img/header-tablet@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 1366px)" width="660" height="401"
-                  srcset="img/intro-desktop@1x.webp 1x" srcset="img/header-desktop@2x.webp 2x">
+                  srcset="img/intro-desktop@1x.webp 1x, img/header-desktop@2x.webp 2x">
                 <source type="image/jpeg" media="(max-width: 767px)" width="320" height="313"
-                  srcset="img/intro-mobile@1x.jpg 1x" srcset="img/header-mobile@2x.jpg 2x">
+                  srcset="img/intro-mobile@1x.jpg 1x, img/header-mobile@2x.jpg 2x">
                 <source type="image/jpeg" media="(max-width: 1365px)" width="678" height="345"
-                  srcset="img/intro-tablet@1x.jpg 1x" srcset="img/header-tablet@2x.jpg 2x">
-                <img class="intro__img" width="660" height="401" src="img/intro-desktop@1x.jpg 1x"
+                  srcset="img/intro-tablet@1x.jpg 1x, img/header-tablet@2x.jpg 2x">
+                <img class="intro__img" width="660" height="401" src="img/intro-desktop@1x.jpg"
                   srcset="img/intro-desktop@2x.jpg 2x" alt="Фото тренажерного зала">
               </picture>
             </div>
-            <div class="intro__picture intro__picture--video" data-video="video-box">
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)" width="100vw" height="313"
-                  srcset="img/intro-mobile-video@1x.webp 1x" srcset="img/header-mobile-video@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1365px)" width="265" height="167"
-                  srcset="img/intro-tablet-video@1x.webp 1x" srcset="img/header-tablet-video@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 1366px)" width="364" height="228"
-                  srcset="img/intro-desktop-video@1x.webp 1x" srcset="img/header-desktop-video@2x.webp 2x">
-                <source type="image/jpeg" media="(max-width: 767px)" width="100vw" height="313"
-                  srcset="img/intro-mobile-video@1x.jpg 1x" srcset="img/header-mobile-video@2x.jpg 2x">
-                <source type="image/jpeg" media="(max-width: 1365px)" width="265" height="167"
-                  srcset="img/intro-tablet-video@1x.jpg 1x" srcset="img/header-tablet-video@2x.jpg 2x">
-                <img class="intro__img intro__video " width="364" height="228" src="img/intro-desktop-video@1x.jpg 1x"
-                  srcset="img/intro-desktop-video@2x.jpg 2x" alt="Фото тренажерного зала">
-              </picture>
-              <button class="intro__picture-button" type="button" data-play-button="play-button"
-                aria-label="Воспроизвести видео.">
+            <div class="intro__video video" data-video="video-box">
+              <a class="intro__video-link video__link"  data-video-link="video__link" href="https://www.youtube.com/embed/9TZXsZItgdw?si=4m8THFQNIymgYfiT">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="100vw" height="313"
+                    srcset="img/intro-mobile-video@1x.webp 1x" srcset="img/header-mobile-video@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1365px)" width="265" height="167"
+                    srcset="img/intro-tablet-video@1x.webp 1x" srcset="img/header-tablet-video@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1366px)" width="364" height="228"
+                    srcset="img/intro-desktop-video@1x.webp 1x" srcset="img/header-desktop-video@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 767px)" width="100vw" height="313"
+                    srcset="img/intro-mobile-video@1x.jpg 1x" srcset="img/header-mobile-video@2x.jpg 2x">
+                  <source type="image/jpeg" media="(max-width: 1365px)" width="265" height="167"
+                    srcset="img/intro-tablet-video@1x.jpg 1x" srcset="img/header-tablet-video@2x.jpg 2x">
+                  <img class="intro__img intro__video-media video__media" width="364" height="228"
+                    src="img/intro-desktop-video@1x.jpg 1x" srcset="img/intro-desktop-video@2x.jpg 2x"
+                    alt="Фото тренажерного зала">
+                </picture>
+              </a>
+              <button class="intro__picture-button video__button" type="button" data-play-button="play-button"
+                aria-label="Воспроизвести видео">
                 <svg class="intro__picture-button-svg" width="17" heigth="17" viewBox="0 0 17 17">
                   <use href="img/sprite.svg#play-icon"></use>
                 </svg>
@@ -833,7 +836,8 @@
                 <h3 class="faq__item-title">
                   Как стать членом фитнес-центра?
                 </h3>
-                <input type="checkbox" checked class="faq__item-toggle" arial-label="Раскрыть описание" id="faq-description-1">
+                <input type="checkbox" checked class="faq__item-toggle" arial-label="Раскрыть описание"
+                  id="faq-description-1">
                 <label class="faq__item-button" for="faq-description-1"></label>
                 <p class="faq__item-description">
                   При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
